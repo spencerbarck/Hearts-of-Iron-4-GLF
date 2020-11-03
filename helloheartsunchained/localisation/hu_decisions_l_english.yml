@@ -1,0 +1,19 @@
+﻿l_english:
+ GLF_repurpose_trade_ships_decisions:0 "Repurpose Trade Ships"
+ GLF_save_the_land_decisions:0 "Land Restoration"
+ GLF_new_world_communism_decisions:0 "Spread Communism to the United States"
+ GLF_the_cold_peace_decisions:0 "The Cold Peace"
+ 
+ repurpose_small_trade_ships:0 "Repurpose Small Trade Ships"
+ repurpose_medium_trade_ships:0 "Repurpose Medium Trade Ships"
+ repurpose_large_trade_ship:0 "Repurpose Large Trade Ship"
+ repurpose_the_hemlock:0 "Repurpose the Hemlock"
+ 
+ the_cold_peace_deal_start1:0 "Begin Peace Talks"
+ the_cold_peace_deal1:0 "Queen Charlotte Islands Conference"
+ 
+ 
+ repurpose_small_trade_ships_tooltip:0 "Adds 4 destroyers to production that are 95% completed."
+ repurpose_medium_trade_ships_tooltip:0 "Adds 2 light cruisers to production that are 95% completed."
+ repurpose_large_trade_ship_tooltip:0 "Adds 1 heavy cruiser to production that is 95% completed."
+ repurpose_the_hemlock_tooltip:0 "Adds 1 carrier to production that is 90% completed."

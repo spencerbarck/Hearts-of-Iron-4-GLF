@@ -1,0 +1,54 @@
+﻿l_english:
+ glf.1.title:0 "The Great Lakes Confederation!"
+ glf.1.d:0 "After the American revolution the native tribes of the great lakes got together and formed the Great Lakes Confederation!"
+ glf.1.a:0 "Our ancestors watch us this day!"
+ glf.1.b:0 "This new world has new challenges"
+ glf.29.title:0 "Britain accepts our request"
+ glf.29.d:0 "Britain has accepted our request to join the allies. Hopefully we can count on their support if we give them ours."
+ glf.29.a:0 "We will help the Colonizers dispite our hisotry!"
+ glf.30.title:0 "Britain rejects our request"
+ glf.30.d:0 "Britain has rejected our request to join the allies. They will not get any help from us."
+ glf.30.a:0 "Typical Colonizers. It is their loss!"
+ 
+ glf.13.t:0 "Operation Dark Feather"
+ glf.13.a:0 "Be as silent as the midnight woods"
+ 
+ glf.14.t:0 "Operation Success"
+ glf.14.a:0 "Our warriors are truly great!"
+ 
+ glf.66.t:0 "Operation Failed"
+ glf.66.a:0 "This is a sad day"
+ 
+ glf.15.t:0 "Trial of the free Nixkamich"
+ glf.15.a:0 "Put him in our prison"
+ glf.15.b:0 "Execute him for his crimes"
+ glf.15.c:0 "He fought for the tribes in his own way"
+ 
+ glf.16.t:0 "Trial of a prisoner"
+ glf.16.a:0 "He commited a crime and belongs in a prison"
+ glf.16.b:0 "He fought for the tribes in his own way"
+ 
+ glf.17.t:0 "Trial the dead"
+ glf.17.a:0 "He commited a crime but may he rest in peace"
+ glf.17.b:0 "He fought for the tribes in his own way"
+
+ hu_britain.1.t:0 "Great Lakes Confederation asks to join the Allies"
+ hu_britain.1.d:0 "A delagation from the Ojibwe tribe of the Great Lakes Confederation has come with an alliance offer from the Confederation. While these tribes are far across the ocean they can still send forces to help in war."
+ hu_britain.1.a:0 "We welcome these powerful tribes"
+ hu_britain.1.b:0 "An allience would be bad for us"
+
+ hu_news.1.t:0 "The Great Lakes Confederation Lake Fair"
+ hu_news.1.d:0 "Thousands flocked to lake Superior today for the Great Lakes Confederation Lakes fair! Items on dispaly included finely woven dresses, extravagant canoes, beautiful beadwork, and newly modified rifles from America."
+ hu_news.1.a:0 "What a cultured fair!"
+ 
+ hu_news.2.t:0 "Great Lakes Confederation Joins Allies"
+ hu_news.2.d:0 "The tribal Confederation of the Great Lakes has been accepted into the Allies. The Confederation and Britain have a controversial history but they have put the past behind them and chosen to support each other."
+ hu_news.2.a:0 "The new world and the old stand together"
+ hu_news.2.b:0 "Britain looks for anyone to help them"
+ hu_news.2.c:0 "Enemies all of them"
+ hu_news.2.e:0 "The Great Lakes should remember who wronged them"
+ hu_news.3.t:0 "Great Lakes Confederation denied from Allies"
+ hu_news.3.d:0 "The tribal Confederation of the Great Lakes has been rejected from the Allies. The Confederation and Britain have a violent history and it appears they could not come to an agreement ."
+ hu_news.3.a:0 "They should have asked nicely"
+ hu_news.3.b:0 "Britain gets more alone"
+ hu_news.3.c:0 "The Confederation and Britain will never get along"
