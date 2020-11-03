@@ -62,6 +62,7 @@ country_event = {
 
 	option = {
 		name = glf.30.a
+		add_war_support = 0.05
 	}
 }
 
@@ -147,11 +148,7 @@ country_event = {
 	# We will never let go of our claims!
 	option = {
 		name = glf.4.a
-	}
-
-	# Give it up
-	option = {
-		name = glf.4.b
+		add_war_support = 0.05
 	}
 }
 
@@ -187,11 +184,7 @@ country_event = {
 	# We will never let go of our claims!
 	option = {
 		name = glf.6.a
-	}
-
-	# Give it up
-	option = {
-		name = glf.6.b
+		add_war_support = 0.05
 	}
 }
 
@@ -220,6 +213,7 @@ country_event = {
 
 	option = {
 		name = glf.8.a
+		add_war_support = 0.05
 	}
 }
 
@@ -248,6 +242,7 @@ country_event = {
 
 	option = {
 		name = glf.10.a
+		add_war_support = 0.05
 	}
 }
 
@@ -508,18 +503,22 @@ country_event = {
 	option = { # look for them ourselves
 		name = glf.18.a
 		ai_chance = { factor = 80 }
-		
+		add_political_power = -10
 
 	}
 	option = { # allow canada to help
 		name = glf.18.b
 		ai_chance = { factor = 15 }
+		add_political_power = -20
+		add_opinion_modifier = { target = CAN modifier = GLF_manitoba_help }
+		CAN = { add_opinion_modifier = { target = ROOT modifier = GLF_manitoba_help } }
 		
 	}
 	option = { # don't bother
 		name = glf.18.c
 		ai_chance = { factor = 5 }
-		
+		add_opinion_modifier = { target = CAN modifier = GLF_manitoba_ignore }
+		CAN = { add_opinion_modifier = { target = ROOT modifier = GLF_manitoba_ignore } }
 	}
 }
 
@@ -545,7 +544,7 @@ country_event = {
 	option = { # great news 
 		name = glf.93.a
 		ai_chance = { factor = 80 }
-
+		
 	}
 }
 
@@ -571,13 +570,26 @@ country_event = {
 	option = { # accept him
 		name = glf.92.a
 		ai_chance = { factor = 80 }
+		
+		add_political_power = -25
+		
+		create_corps_commander = {#male
+			name = "Jacques Maple-Fox Dextraze"
+			picture = "Portrait_GLF_General_f_blue.dds"
+			traits = { infantry_officer inflexible_strategist trickster}
+			skill = 5
 
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
 	}
 	
 	option = { # reject him
 		name = glf.92.b
 		ai_chance = { factor = 80 }
-
+		
 	}
 }
 
@@ -590,26 +602,32 @@ country_event = {
 
 	#is_triggered_only = yes
 
-	#trigger = {
-	#	original_tag  = GLF
-	#}
+	trigger = {
+		original_tag  = GLF
+	}
 
 	fire_only_once = yes
 
 	option = { # greatest gun
 		name = glf.95.a
 		ai_chance = { factor = 30 }
-		
-
+		add_equipment_to_stockpile = {
+				type = 	infantry_equipment_1
+				amount = 3000
+		}
 	}
 	option = { # greatest performance
 		name = glf.95.b
 		ai_chance = { factor = 30 }
-		
+		add_stability = 0.05
 	}
 	option = { # greatest sqash
 		name = glf.95.c
 		ai_chance = { factor = 40 }
+		add_equipment_to_stockpile = {
+				type = 	support_equipment
+				amount = 2000
+		}
 	}
 }
 
@@ -624,7 +642,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.1.2
+		date > 1936.1.2
 		GLF = {
 			owns_state = 393
 		}
@@ -639,7 +657,9 @@ country_event = {
 	option = { # great news 
 		name = glf.19.a
 		ai_chance = { factor = 80 }
-
+		393 = {
+				add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -654,7 +674,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.2.2
 	}
 
 	fire_only_once = yes
@@ -662,13 +682,13 @@ country_event = {
 	option = { # allow foreigners 
 		name = glf.20.a
 		ai_chance = { factor = 20 }
-
+		navy_experience = 15
 	}
 	
 	option = { # no foreigners
 		name = glf.20.b
 		ai_chance = { factor = 80 }
-
+		add_political_power = 10
 	}
 }
 
@@ -683,7 +703,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.2.2
 		
 		country_exists = USA
 		GLF = {
@@ -696,13 +716,14 @@ country_event = {
 	option = { # accept them
 		name = glf.21.a
 		ai_chance = { factor = 20 }
-
+		add_political_power = -15
+		add_manpower = 7500
 	}
 	
 	option = { # do not accept them
 		name = glf.21.b
 		ai_chance = { factor = 80 }
-
+		add_political_power = -5
 	}
 }
 
@@ -717,7 +738,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.2.2
 		
 		country_exists = USA
 		GLF = {
@@ -730,13 +751,14 @@ country_event = {
 	option = { # accept them
 		name = glf.94.a
 		ai_chance = { factor = 20 }
-
+		add_political_power = -15
+		add_manpower = 7500
 	}
 	
 	option = { # do not accept them
 		name = glf.94.b
 		ai_chance = { factor = 80 }
-
+		add_political_power = -5
 	}
 }
 
@@ -751,7 +773,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.5.2
 		
 		country_exists = CAN
 		GLF = {
@@ -765,7 +787,10 @@ country_event = {
 	option = { # don't adress it
 		name = glf.22.a
 		ai_chance = { factor = 20 }
-
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+		}
 	}
 	
 	option = { # condemn them
@@ -786,7 +811,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.5.2
 		
 		country_exists = CAN
 		GLF = {
@@ -800,6 +825,10 @@ country_event = {
 	option = { # don't adress it
 		name = glf.23.a
 		ai_chance = { factor = 20 }
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+		}
 
 	}
 	
@@ -821,7 +850,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.5.2
+		date > 1936.5.2
 		
 		CAN = {
 			owns_state = 468
@@ -838,6 +867,10 @@ country_event = {
 	option = { # outrage
 		name = glf.24.a
 		ai_chance = { factor = 20 }
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}
 	}
 	
 	option = { # this must be investigated
@@ -983,13 +1016,14 @@ country_event = {
 
 	#trigger = {
 	#	original_tag  = GLF
-	#	date > 1937.5.2
+	#	date > 1936.5.2
 	#}
 
 	fire_only_once = yes
 
 	option = {
 		name = glf.98.a
+		air_experience = 150
 	}
 }
 
@@ -1004,7 +1038,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.2.5
+		date > 1936.2.5
 		GLF = {
 			NOT {
 				has_country_leader = {
@@ -1021,10 +1055,16 @@ country_event = {
 
 	option = { # honor her
 		name = glf.97.a
+		add_political_power = 100
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+		}
 	}
 	
 	option = { # give a speach about her
 		name = glf.97.b
+		add_political_power = 50
 	}
 }
 
@@ -1067,7 +1107,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		country_exists = USA
+		#country_exists = USA
 		USA = {
 			has_tech = atomic_research
 		}
@@ -1129,6 +1169,9 @@ country_event = {
 
 	option = { # allow him in
 		name = glf.33.a
+		add_political_power = -10
+		add_opinion_modifier = { target = USA modifier = GLF_charles_curtis }
+		USA = { add_opinion_modifier = { target = ROOT modifier = GLF_charles_curtis } }
 	}
 	
 	option = { # don't allow him in

@@ -1119,4 +1119,16 @@ opinion_modifiers = {
 	GLF_appease_the_us = {
 		value = 50
 	}
+	
+	GLF_charles_curtis = {
+		value = 25
+	}
+	
+	GLF_manitoba_help = {
+		value = 25
+	}
+	
+	GLF_manitoba_ignore = {
+		value = -25
+	}
 }
