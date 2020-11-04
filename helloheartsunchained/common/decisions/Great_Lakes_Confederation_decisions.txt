@@ -188,7 +188,7 @@ GLF_repurpose_trade_ships_decisions = {
 }
 GLF_new_world_communism_decisions = {
 		
-	spread_south1 = {
+	GLF_spread_south1 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 389 }
@@ -196,7 +196,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -208,6 +213,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -222,7 +228,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south2 = {
+	GLF_spread_south2 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 390 }
@@ -230,7 +236,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -242,6 +253,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -256,7 +268,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south3 = {
+	GLF_spread_south3 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 392 }
@@ -264,7 +276,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -276,6 +293,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -290,7 +308,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south4 = {
+	GLF_spread_south4 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 373 }
@@ -298,7 +316,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -310,6 +333,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -324,7 +348,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south5 = {
+	GLF_spread_south5 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 369 }
@@ -332,7 +356,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -344,6 +373,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -358,7 +388,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south6 = {
+	GLF_spread_south6 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 362 }
@@ -366,7 +396,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -378,6 +413,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -392,7 +428,7 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south7 = {
+	GLF_spread_south7 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 360 }
@@ -400,7 +436,12 @@ GLF_new_world_communism_decisions = {
 		
 		cost = 50
 		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -412,6 +453,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -426,14 +468,20 @@ GLF_new_world_communism_decisions = {
 	
 	}
 	
-	spread_south8 = {
+	GLF_spread_south8 = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 		highlight_states = { state = 358 }
 		fire_only_once = yes	
 		
 		cost = 50
+		
+		available = {
+			NOT = {has_country_flag = GLF_spreading_communism}
+		}
+		
 		complete_effect = {
+			set_country_flag = GLF_spreading_communism
 			USA {
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
@@ -445,6 +493,7 @@ GLF_new_world_communism_decisions = {
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = GLF_spreading_communism
 			USA {
 				add_popularity = {
 					ideology = communism
@@ -461,7 +510,7 @@ GLF_new_world_communism_decisions = {
 }
 
 GLF_save_the_land_decisions = {
-	save_land1 = {
+	GLF_save_land1 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 391 }
 		fire_only_once = yes	
@@ -469,10 +518,17 @@ GLF_save_the_land_decisions = {
 			391{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			391{
 				remove_building = {
 					type = infrastructure
@@ -486,18 +542,25 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land2 = {
+	GLF_save_land2 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 682 }
 		fire_only_once = yes	
 		available = {
 			682{
 				infrastructure > 1
-			}
+			}	
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			682{
 				remove_building = {
 					type = infrastructure
@@ -511,7 +574,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land3 = {
+	GLF_save_land3 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 394 }
 		fire_only_once = yes	
@@ -519,10 +582,17 @@ GLF_save_the_land_decisions = {
 			394{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			394{
 				remove_building = {
 					type = infrastructure
@@ -536,7 +606,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land4 = {
+	GLF_save_land4 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 393 }
 		fire_only_once = yes	
@@ -544,10 +614,17 @@ GLF_save_the_land_decisions = {
 			393{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			393{
 				remove_building = {
 					type = infrastructure
@@ -561,7 +638,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land5 = {
+	GLF_save_land5 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 395 }
 		fire_only_once = yes	
@@ -569,10 +646,17 @@ GLF_save_the_land_decisions = {
 			395{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			395{
 				remove_building = {
 					type = infrastructure
@@ -586,7 +670,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land6 = {
+	GLF_save_land6 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 396 }
 		fire_only_once = yes	
@@ -594,10 +678,17 @@ GLF_save_the_land_decisions = {
 			396{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			396{
 				remove_building = {
 					type = infrastructure
@@ -611,7 +702,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land7 = {
+	GLF_save_land7 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 261 }
 		fire_only_once = yes	
@@ -619,10 +710,17 @@ GLF_save_the_land_decisions = {
 			261{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			261{
 				remove_building = {
 					type = infrastructure
@@ -636,7 +734,7 @@ GLF_save_the_land_decisions = {
 		}
 	}
 	
-	save_land8 = {
+	GLF_save_land8 = {
 		icon = GFX_decision_eng_puppet_usa
 		highlight_states = { state = 276 }
 		fire_only_once = yes	
@@ -644,10 +742,17 @@ GLF_save_the_land_decisions = {
 			276{
 				infrastructure > 1
 			}
+			NOT = {has_country_flag = GLF_land_project}
 		}
 		cost = 50
+		
+		complete_effect = {
+			set_country_flag = GLF_land_project
+		}
+		
 		days_remove = 70
 		remove_effect = {
+			clr_country_flag = GLF_land_project
 			276{
 				remove_building = {
 					type = infrastructure
@@ -664,7 +769,7 @@ GLF_save_the_land_decisions = {
 
 GLF_the_cold_peace_decisions = {
 	
-	the_cold_peace_deal_start1 = {
+	GLF_the_cold_peace_deal_start1 = {
 		icon = GFX_decision_eng_trade_unions_support
 		is_good = yes
 		fire_only_once = no
@@ -674,7 +779,7 @@ GLF_the_cold_peace_decisions = {
 			NOT{has_country_flag = ask_for_canada}
 		}
 		available = {
-			NOT{
+			#NOT{
 				NOT {CAN {has_capitulated = yes}}
 				NOT {controls_state = 468}
 				NOT {controls_state = 809}
@@ -685,7 +790,7 @@ GLF_the_cold_peace_decisions = {
 				NOT {controls_state = 464}
 				NOT {controls_state = 473}
 				NOT {has_army_manpower = { size > 299999 }}
-			}
+			#}
 		}
 		complete_effect = {
 			set_country_flag = ask_for_canada
@@ -699,7 +804,7 @@ GLF_the_cold_peace_decisions = {
 	}
 	
 	
-	the_cold_peace_deal1 = {
+	GLF_the_cold_peace_deal1 = {
 		icon = GFX_decision_eng_ally_imperialist_coup
 		fire_only_once = no
 		is_good = yes
@@ -715,16 +820,16 @@ GLF_the_cold_peace_decisions = {
         }	
 		available = {
 			OR{
-				NOT {CAN {has_capitulated = yes}}
-				NOT {controls_state = 468}
-				NOT {controls_state = 809}
-				NOT {controls_state = 467}
-				NOT {controls_state = 469}
-				NOT {controls_state = 470}
-				NOT {controls_state = 465}
-				NOT {controls_state = 464}
-				NOT {controls_state = 473}
-				NOT {has_army_manpower = { size > 299999 }}
+				#NOT {CAN {has_capitulated = yes}}
+				#NOT {controls_state = 468}
+				#NOT {controls_state = 809}
+				#NOT {controls_state = 467}
+				#NOT {controls_state = 469}
+				#NOT {controls_state = 470}
+				#NOT {controls_state = 465}
+				#NOT {controls_state = 464}
+				#NOT {controls_state = 473}
+				#NOT {has_army_manpower = { size > 299999 }}
 			}
 		}
 		days_mission_timeout = 2
@@ -767,7 +872,7 @@ GLF_the_cold_peace_decisions = {
 	
 GLF_spanish_civil_war_decisions = {
 		
-	observe_republican_tactics= {
+	GLF_observe_republican_tactics= {
 
 		icon = GFX_decision_generic_prepare_civil_war
 		fire_only_once = yes	
@@ -794,7 +899,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	observe_republican_navel_actions= {
+	GLF_observe_republican_navel_actions= {
 
 		icon = GFX_decision_generic_naval
 		fire_only_once = yes	
@@ -821,7 +926,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	contact_republican_high_command= {
+	GLF_contact_republican_high_command= {
 
 		icon = GFX_decision_generic_army_support
 		fire_only_once = yes	
@@ -848,7 +953,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	stow_away_to_nationalist_side= {
+	GLF_stow_away_to_nationalist_side= {
 
 		icon = GFX_decision_onmap_recruit_operative
 		fire_only_once = yes	
@@ -871,7 +976,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	observe_nationalist_tactics= {
+	GLF_observe_nationalist_tactics= {
 
 		icon = GFX_decision_generic_prepare_civil_war
 		fire_only_once = yes	
@@ -898,7 +1003,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	observe_bombings= {
+	GLF_observe_bombings= {
 
 		icon = GFX_decision_generic_air
 		fire_only_once = yes	
@@ -925,7 +1030,7 @@ GLF_spanish_civil_war_decisions = {
 	
 	}
 	
-	contact_nationalist_high_command= {
+	GLF_contact_nationalist_high_command= {
 
 		icon = GFX_decision_generic_army_support
 		fire_only_once = yes	
@@ -954,7 +1059,7 @@ GLF_spanish_civil_war_decisions = {
 
 GLF_italy_ethiopia_war_decisions = {
 		
-	observe_italian_tactics= {
+	GLF_observe_italian_tactics= {
 
 		icon = GFX_decision_generic_prepare_civil_war
 		fire_only_once = yes	
@@ -972,7 +1077,7 @@ GLF_italy_ethiopia_war_decisions = {
 		}
 	}
 	
-	observe_italian_air_support= {
+	GLF_observe_italian_air_support= {
 
 		icon = GFX_decision_generic_air
 		fire_only_once = yes	
@@ -990,7 +1095,7 @@ GLF_italy_ethiopia_war_decisions = {
 		}
 	}
 	
-	observe-division-composition= {
+	GLF_observe-division-composition= {
 
 		icon = GFX_decision_generic_army_support
 		fire_only_once = yes	
@@ -1011,7 +1116,7 @@ GLF_italy_ethiopia_war_decisions = {
 
 GLF_great_north_confederation_decisions = {
 
-	form_the_great_north_confederation= {
+	GLF_form_the_great_north_confederation= {
 
 		icon = generic_form_nation
 		fire_only_once = yes	
@@ -1030,7 +1135,7 @@ GLF_great_north_confederation_decisions = {
 		}
 	}
 
-	relocate_capital_to_quebec = {
+	GLF_relocate_capital_to_quebec = {
 
 		icon = GFX_decision_eng_trade_unions_demand
 		fire_only_once = yes	
@@ -1041,9 +1146,18 @@ GLF_great_north_confederation_decisions = {
 		
 		cost = 10
 		
+		available = {
+			controls_state = 468
+		}
+		
 		days_remove = 30
 		
 		remove_effect = {
+			add_victory_points = {
+				province = 12149
+				value = 18    
+			}
+			set_capital = 468
 			add_ideas = GLF_quebec_capital
 		}
 		
@@ -1052,12 +1166,16 @@ GLF_great_north_confederation_decisions = {
 		}
 	}
 	
-	relocate_capital_to_chicago = {
+	GLF_relocate_capital_to_chicago = {
 
 		icon = GFX_decision_eng_trade_unions_demand
 		fire_only_once = yes	
 		
 		cost = 10
+		
+		available = {
+			controls_state = 395
+		}
 		
 		visible = {
 			#always = no
@@ -1066,6 +1184,7 @@ GLF_great_north_confederation_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
+			set_capital = 395
 			add_ideas = GLF_chicago_capital
 		}
 		
@@ -1074,7 +1193,7 @@ GLF_great_north_confederation_decisions = {
 		}
 	}
 	
-	reafferm_detroit_as_the_capital = {
+	GLF_reafferm_detroit_as_the_capital = {
 
 		icon = GFX_decision_eng_trade_unions_demand
 		fire_only_once = yes	
@@ -1083,6 +1202,10 @@ GLF_great_north_confederation_decisions = {
 		
 		visible = {
 			#always = no
+		}
+		
+		available = {
+			controls_state = 393
 		}
 		
 		days_remove = 30
@@ -1095,31 +1218,18 @@ GLF_great_north_confederation_decisions = {
 		}
 	}
 	
-	incorperate_quebec_tribes= {
+	GLF_incorperate_quebec_tribes= {
 
 		icon = GFX_decision_eng_trade_unions_support
+		highlight_states = { state = 466 }
 		fire_only_once = yes	
 		
 		cost = 10
 		
-		visible = {
-			#always = no
+		available = {
+			controls_state = 466
+			controls_state = 332
 		}
-		
-		days_remove = 30
-		
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	incorperate_british_columbia_tribes= {
-
-		icon = GFX_decision_eng_trade_unions_support
-		fire_only_once = yes	
-		
-		cost = 10
 		
 		visible = {
 			#always = no
@@ -1128,7 +1238,8 @@ GLF_great_north_confederation_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			
+			add_state_core = 466
+			add_state_core = 332
 		}
 		
 		ai_will_do = {
@@ -1136,12 +1247,18 @@ GLF_great_north_confederation_decisions = {
 		}
 	}
 	
-	incorperate_far_north_tribes= {
+	GLF_incorperate_british_columbia_tribes= {
 
 		icon = GFX_decision_eng_trade_unions_support
+		highlight_states = { state = 473 }
 		fire_only_once = yes	
 		
 		cost = 10
+		
+		available = {
+			controls_state = 470
+			controls_state = 473
+		}
 		
 		visible = {
 			#always = no
@@ -1150,7 +1267,70 @@ GLF_great_north_confederation_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			
+			add_state_core = 470
+			add_state_core = 473
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GLF_incorperate_middle_canada_tribes= {
+
+		icon = GFX_decision_eng_trade_unions_support
+		highlight_states = { state = 469 }
+		fire_only_once = yes	
+		
+		cost = 10
+		
+		available = {
+			controls_state = 471
+			controls_state = 472
+			controls_state = 683
+			controls_state = 469
+			controls_state = 467
+		}
+		
+		visible = {
+			#always = no
+		}
+		
+		days_remove = 30
+		
+		remove_effect = {
+			add_state_core = 471
+			add_state_core = 472
+			add_state_core = 683
+			add_state_core = 469
+			add_state_core = 467
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GLF_incorperate_Saint_Lawrence_tribes= {
+
+		icon = GFX_decision_eng_trade_unions_support
+		highlight_states = { state = 468 }
+		fire_only_once = yes	
+		
+		cost = 10
+		
+		available = {
+			controls_state = 468
+		}
+		
+		visible = {
+			#always = no
+		}
+		
+		days_remove = 30
+		
+		remove_effect = {
+			add_state_core = 468
 		}
 		
 		ai_will_do = {

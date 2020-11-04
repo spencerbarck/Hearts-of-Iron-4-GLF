@@ -117,5 +117,13 @@ GLF_great_north_confederation_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible_when_empty = yes
+	
+	on_map_area = {
+		state = 473
+		state = 469
+		state = 466
+		state = 468
+		zoom = 300
+	}
 
 }
