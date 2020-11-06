@@ -399,7 +399,7 @@
 
 	focus = {
 		id = GLF_isolation_no_longer
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_goal_GLF_isolation_no_longer
 		x = 15
 		y = 0
 
@@ -1346,7 +1346,7 @@
 
 	focus = {
 		id = GLF_rally_the_lake_chiefs
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_GLF_rally_the_lake_chiefs
 		x = 28
 		y = 0
 

@@ -400,4 +400,19 @@ spriteTypes = {
 		name = "GFX_goal_GLF_animikiikaa_project"
 		texturefile = "gfx/interface/goals/focus_GLF_animikiikaa_project.dds"			
 	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_isolation_no_longer"
+		texturefile = "gfx/interface/goals/focus_GLF_isolation_no_longer.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_rally_the_lake_chiefs"
+		texturefile = "gfx/interface/goals/focus_GLF_rally_the_lake_chiefs.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_our_path_to_the_sea"
+		texturefile = "gfx/interface/goals/focus_GLF_our_path_to_the_sea.dds"			
+	}
 }
