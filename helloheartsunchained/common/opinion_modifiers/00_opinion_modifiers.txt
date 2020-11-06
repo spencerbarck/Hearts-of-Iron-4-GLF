@@ -1131,4 +1131,8 @@ opinion_modifiers = {
 	GLF_manitoba_ignore = {
 		value = -25
 	}
+
+	GLF_contact_spain = {
+		value = 50
+	}
 }

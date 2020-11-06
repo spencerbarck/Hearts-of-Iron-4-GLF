@@ -3,6 +3,8 @@ oob = "GLF_1936"
 
 # Starting tech
 
+#set_cosmetic_tag = GNC_TRIBES
+
 set_research_slots = 3
 set_technology = {
 

@@ -3,9 +3,11 @@
 	common/ideas/zzz_generic.txt
 	common/bookmarks/the_gathering_storm.txt
 	common/countries/colors.txt
+	common/countries/cosmetic.txt
 	common/country_leader/00_traits.txt
 	common/country_tags/00_countries.txt
 	common/opinion_modifiers/00_opinion_modifiers.txt
+	
 	
 	history/countries/CAN - Canada.txt
 	history/countries/USA - USA.txt
@@ -20,6 +22,7 @@
 	localization/state_names_I_english.yml
 	localization/supply_area_names_I_english.yml
 	localization/traits_I_english.yml
+	localization/localization/traits_I_english.yml.yml
 	
 	map/airports.txt
 	map/buildings.txt

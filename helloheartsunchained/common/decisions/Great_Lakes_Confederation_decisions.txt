@@ -202,7 +202,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -214,7 +214,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -242,7 +242,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -254,7 +254,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -282,7 +282,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -294,7 +294,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -322,7 +322,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -334,7 +334,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -362,7 +362,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -374,7 +374,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -402,7 +402,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -414,7 +414,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -442,7 +442,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -454,7 +454,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -482,7 +482,7 @@ GLF_new_world_communism_decisions = {
 		
 		complete_effect = {
 			set_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_timed_idea = {
 					idea = USA_lakes_communism_spread
 					days = 45
@@ -494,7 +494,7 @@ GLF_new_world_communism_decisions = {
 		
 		remove_effect = {
 			clr_country_flag = GLF_spreading_communism
-			USA {
+			USA ={
 				add_popularity = {
 					ideology = communism
 					popularity = 0.05
@@ -529,7 +529,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			391{
+			391={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -561,7 +561,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			682{
+			682={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -593,7 +593,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			394{
+			394={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -625,7 +625,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			393{
+			393={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -657,7 +657,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			395{
+			395={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -689,7 +689,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			396{
+			396={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -721,7 +721,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			261{
+			261={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -753,7 +753,7 @@ GLF_save_the_land_decisions = {
 		days_remove = 70
 		remove_effect = {
 			clr_country_flag = GLF_land_project
-			276{
+			276={
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -944,7 +944,8 @@ GLF_spanish_civil_war_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			navy_experience = 10
+			add_opinion_modifier = { target = SPR modifier = GLF_contact_spain }	
+			SPR = { add_opinion_modifier = { target = ROOT modifier = GLF_contact_spain } }	
 		}
 		
 		ai_will_do = {
@@ -1048,7 +1049,8 @@ GLF_spanish_civil_war_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			navy_experience = 10
+			add_opinion_modifier = { target = D01 modifier = GLF_contact_spain }	
+			D01 = { add_opinion_modifier = { target = ROOT modifier = GLF_contact_spain } }	
 		}
 		
 		ai_will_do = {
@@ -1105,7 +1107,22 @@ GLF_italy_ethiopia_war_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			army_experience = 10
+			custom_effect_tooltip = GLF_italy_division
+			division_template = { 
+				name = "Akecheta's band" 
+				division_names_group = CAN_GAR_01
+				regiments = { 
+					infantry = { x = 0 y = 0 } 
+					infantry = { x = 0 y = 1 } 
+					infantry = { x = 0 y = 2 } 
+					infantry = { x = 1 y = 0 } 
+					infantry = { x = 1 y = 1 } 
+					infantry = { x = 1 y = 2 } 
+				} 
+				support = { 
+					engineer = { x = 0 y = 0 } 
+				} 
+			}
 		}
 		
 		ai_will_do = {
@@ -1122,10 +1139,10 @@ GLF_great_north_confederation_decisions = {
 		fire_only_once = yes	
 		
 		available = {
-			always = no
+			#always = no
 		}
 		complete_effect = {
-			#set_cosmetic_tag = SCA_UNIFIED
+			GLF = {set_cosmetic_tag = GNC_TRIBES}
 		}
 			
 		cost = 0
