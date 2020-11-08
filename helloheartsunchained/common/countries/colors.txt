@@ -1,7 +1,8 @@
 #reload countrycolors
 
 GLF = {
-	color = rgb { 34 139 34 }
+	color = rgb { 0 220 139 }
+	#color = rgb { 34 139 34 }
 	color_ui = rgb { 34 139 34 }
 }
 

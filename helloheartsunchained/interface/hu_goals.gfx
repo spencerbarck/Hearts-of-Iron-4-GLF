@@ -415,4 +415,134 @@ spriteTypes = {
 		name = "GFX_goal_GLF_our_path_to_the_sea"
 		texturefile = "gfx/interface/goals/focus_GLF_our_path_to_the_sea.dds"			
 	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_warrior_spirit"
+		texturefile = "gfx/interface/goals/focus_GLF_warrior_spirit.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_forest_warriors"
+		texturefile = "gfx/interface/goals/focus_GLF_forest_warriors.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_strike_fast"
+		texturefile = "gfx/interface/goals/focus_GLF_strike_fast.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_detroit_auto"
+		texturefile = "gfx/interface/goals/focus_GLF_detroit_auto.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_light_tank_tactics"
+		texturefile = "gfx/interface/goals/focus_GLF_light_tank_tactics.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_swift_like_the_tide"
+		texturefile = "gfx/interface/goals/focus_GLF_swift_like_the_tide.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_strike_smart"
+		texturefile = "gfx/interface/goals/focus_GLF_strike_smart.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_new_ottawa_generals"
+		texturefile = "gfx/interface/goals/focus_GLF_new_ottawa_generals.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_connect_the_warbands"
+		texturefile = "gfx/interface/goals/focus_GLF_connect_the_warbands.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_examine_foreign_tactics"
+		texturefile = "gfx/interface/goals/focus_GLF_examine_foreign_tactics.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_strike_hard"
+		texturefile = "gfx/interface/goals/focus_GLF_strike_hard.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_stronger_small_arms"
+		texturefile = "gfx/interface/goals/focus_GLF_stronger_small_arms.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_great_north_guns"
+		texturefile = "gfx/interface/goals/focus_GLF_great_north_guns.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_fight_shell_for_shell"
+		texturefile = "gfx/interface/goals/focus_GLF_fight_shell_for_shell.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_bgwajinini"
+		texturefile = "gfx/interface/goals/focus_GLF_bgwajinini.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_water_lynx"
+		texturefile = "gfx/interface/goals/focus_GLF_water_lynx.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_wiingdoo_hunters"
+		texturefile = "gfx/interface/goals/focus_GLF_wiingdoo_hunters.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_thunderers"
+		texturefile = "gfx/interface/goals/focus_GLF_thunderers.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_sky_warriors"
+		texturefile = "gfx/interface/goals/focus_GLF_sky_warriors.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_chaos_from_above"
+		texturefile = "gfx/interface/goals/focus_GLF_chaos_from_above.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_close_warband_support"
+		texturefile = "gfx/interface/goals/focus_GLF_close_warband_support.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_invent_the_thunderbird"
+		texturefile = "gfx/interface/goals/focus_GLF_invent_the_thunderbird.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_improve_the_thunderbird"
+		texturefile = "gfx/interface/goals/focus_GLF_improve_the_thunderbird.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_great_lake_aces"
+		texturefile = "gfx/interface/goals/focus_GLF_great_lake_aces.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_carrier_practice"
+		texturefile = "gfx/interface/goals/focus_GLF_carrier_practice.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_great_lakes_airshow"
+		texturefile = "gfx/interface/goals/focus_GLF_great_lakes_airshow.dds"			
+	}
 }
