@@ -269,55 +269,81 @@
 # Army/airforce section
  
  GLF_warrior_spirit:0 "Warrior Spirit"
+ GLF_warrior_spirit_desc:0 "The Great Lakes Confederation did not survive the European western expansion with diplomacy alone. Several strategic and tactical miracles combined with the intense fighting spirit of the tribes prevented the United States from settling the lands we now live in."
  
  GLF_forest_warriors:0 "Forest Warriors"
+ GLF_forest_warriors_desc:0 "Our ancestors and our ancestors ancestors lived in these lands. We know these woods and lakes very well and any enemy who wishes to trespass on our land will spend their last days cold and alone in the dark of the forest."
  
  GLF_strike_fast:0 "Strike Fast"
+ GLF_strike_fast_desc:0 "Nixkamich was a controversial figure but his tactics and strategy lead to several victories over the much larger nations of Canada and The United States. His tactics included fast moving troops that overwhelmed the enemy from all sides. If we are to continue to be a military power we must learn from his victories."
  
  GLF_detroit_auto:0 "Detroit Auto"
+ GLF_detroit_auto_desc:0 "Detroit was once a modest trading post and meeting point. It has now become a powerful city famous for its car factories. As speed becomes more and more important when it comes to warfare it is paramount that our troops and supplies can stay on the move."
  
  GLF_light_tank_tactics:0 "Light Tank Tactics"
+ GLF_light_tank_tactics_desc:0 "Our territory is not ideal for tank warfare and we have not put much stock in these lumbering behemoths. Perhaps if small more nimble designs are made they can be used to surprise our opponents."
  
  GLF_swift_like_the_tide:0 "Swift as The North Wind"
+ GLF_swift_like_the_tide_desc:0 "The quickest wolf gets the first meal. Cavalry, motorized infantry, and tanks are all fast forms of warfare but for the Confederation to truly honor the genius of Nixkamich all of our forces must be swift and unstoppable."
  
  GLF_strike_smart:0 "Strike Smart"
+ GLF_strike_smart_desc:0 "During the war of 1812 the Confederation was tested by aggression from the Americans south of us. These attacks were poorly conceived. Chief Tecumseh outsmarted the Americans and staged a counterattack that further secured our presence in the region for decades. We should continue his legacy of military genius."
  
  GLF_new_ottawa_generals:0 "New Ottawa Generals"
+ GLF_new_ottawa_generals_desc:0 "When the Confederation re-captured the Ottawa region many tribes were re-incorporated into the Confederation. These new members have offered their best and brightest generals to command the Laker forces."
  
  GLF_connect_the_warbands:0 "Connect The Warbands"
+ GLF_connect_the_warbands_desc:0 "The armies of the Confederation are organized into warbands. These warbands often operate independently and are composed of warriors from the same tribe. With the power of the radio we can improve cooperation between the warbands."
  
  GLF_examine_foreign_tactics:0 "Examine Foreign Tactics"
+ GLF_examine_foreign_tactics_desc:0 "For centuries the tribes of the Confederation have used tactics of guerrilla warfare to fend off advances from the Europeans. Now that we have had a chance to breathe, we should look to these Europeans and see how they are adapting to modern warfare."
  
  GLF_strike_hard:0 "Strike Hard"
+ GLF_strike_hard_desc:0 "During the American revolution Confederation chief Joseph Brant had several military successes fighting alongside the British. Even though the British lost the war the newly formed United States of America had learned to feat Brants combination of large scale strikes and organized marksman. To continue to show strength we must make sure our forces are well equipped."
  
  GLF_stronger_small_arms:0 "Stronger Small Arms"
+ GLF_stronger_small_arms_desc:0 "The manufacture of arms was once a solely European affair but after the industrial growth of the Confederation in the late 19th century companies like Muskrat manufacture quality firearms for the armies of the Confederation. We must make sure our warriors have weapons that can compete with the Canadians and Americans."
  
  GLF_great_north_guns:0 "Great North Guns"
+ GLF_great_north_guns_desc:0 "Our people once feared the indestructible forts of the Colonies and the British man-o-wars with their decks of gargantuan cannons but now we have guns of our own."
  
  GLF_fight_shell_for_shell:0 "Fight Shell for Shell"
+ GLF_fight_shell_for_shell_desc:0 "During the Great war we achieved great victories. Our enemies try to downplay these successes by saying they were caught by surprise and if there was a true fight we would not have the staying power. These foes will learn of our resolve and they will not be hearing thunder when they move against us they will hear the shroud of our artillery."
  
  GLF_bgwajinini:0 "Bgwajinini"
+ GLF_bgwajinini_desc:0 "Bgwajinini are magical creatures that live in the forest. They are known for their tricks and are mostly kind but if they are disrespected they become spirits of vengeance that use their trickery to curse those who wronged them."
  
  GLF_water_lynx:0 "Water Lynx"
+ GLF_water_lynx_desc:0 "Water Lynx are enormous beasts that live beneath lakes. They are incredibly strong creatures that grab unsuspecting swimmers and drown them."
  
  GLF_wiingdoo_hunters:0 "Wiindigoo Incarnate"
+ GLF_wiingdoo_hunters_desc:0 "The Wiingdoo are malevolent spirits that inhabit the bodies of humans. These large horrific beings roam the woods in search of people to eat or possess. They are deformed, bloody, rotting monsters that fear none."
  
  GLF_thunderers:0 "Thunderers"
+ GLF_thunderers_desc:0 "Thunderers are the children of gods that fly in the sky. Lighting and thunder follow them everywhere they go."
  
  GLF_sky_warriors:0 "Sky Warriors"
+ GLF_sky_warriors_desc:0 "The power of warplanes is still new to us but their effectiveness is obvious. Some of the few defeats that we suffered during the Great war were due to biplanes catching our forces in the open and slowing their advances. It is important we continue to develop air force capabilities."
  
  GLF_chaos_from_above:0 "Chaos From Above"
+ GLF_chaos_from_above_desc:0 "Close air support offers a new way to strike fear into the hearts of our enemies as we attack them from above."
  
  GLF_close_warband_support:0 "Close Warband Support"
+ GLF_close_warband_support_desc:0 "Our warbands will be even more devastating if we provide them with strong integrated support from accurate bombers."
  
  GLF_invent_the_thunderbird:0 "Invent The Thunderbird"
+ GLF_invent_the_thunderbird_desc:0 "The Thunderbird is named after an enormous supernatural bird from mythology. The heavy fighter is able to maneuver faster, strike harder and survive longer than any of our other aircraft. The Thunderbird also offers incredible range stretching across many of the Great Lakes."
  
  GLF_improve_the_thunderbird:0 "Improve The Thunderbird"
+ GLF_improve_the_thunderbird_desc:0 "The Thunderbird was a great success and now with further modification it can truly become a titan of the skies."
  
  GLF_great_lake_aces:0 "Great lakes Aces"
+ GLF_great_lake_aces_desc:0 "Some of our most well known citizens are our aces. The daughter of Nixkhamich, Honovi has fought in many wars overseas and has honed her skills. We should encourage our pilots to be the best they can be."
  
  GLF_carrier_practice:0 "Carrier Practice"
+ GLF_carrier_practice_desc:0 "The Great Lakes offer a great training ground for naval aircraft. Exercises can simulate conditions in the Pacific and Atlantic, perhaps in the future our aces will have to operate in these theaters."
  
  GLF_great_lakes_airshow:0 "Great Lakes Airshow"
+ GLF_great_lakes_airshow_desc:0 "It is important that we celebrate our great achievements in aviation and our great highly skilled pilots. The Great Lakes air show will be a place to witness the excellence of the tribes and the Confederation."
  
 # End Army/airforce section
