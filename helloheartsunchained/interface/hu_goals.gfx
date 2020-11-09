@@ -545,4 +545,9 @@ spriteTypes = {
 		name = "GFX_goal_GLF_great_lakes_airshow"
 		texturefile = "gfx/interface/goals/focus_GLF_great_lakes_airshow.dds"			
 	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_the_detroit_revolution"
+		texturefile = "gfx/interface/goals/focus_GLF_the_detroit_revolution.dds"			
+	}
 }

@@ -7,19 +7,18 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-		"GLF"={
-			history = "GLF_GATHERING_STORM_DESC"
-			ideology = neutrality
-			available = {}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
-				canadian_industry_influence
-				resurgence_of_hawkism
-				landlocked_lakes
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
 			}
 			focuses = {
-				GLF_our_path_to_the_sea
-				GLF_isolation_no_longer
-				GLF_rally_the_lake_chiefs
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
 			}
 		}
 		"ENG"={
@@ -52,6 +51,21 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
+		"GLF"={
+			history = "GLF_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = {}
+			ideas = {
+				canadian_industry_influence
+				resurgence_of_hawkism
+				landlocked_lakes
+			}
+			focuses = {
+				GLF_our_path_to_the_sea
+				GLF_isolation_no_longer
+				GLF_rally_the_lake_chiefs
+			}
+		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -67,6 +81,7 @@ bookmarks = {
 				GER_revive_the_kaiserreich
 			}
 		}
+		
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -82,6 +97,7 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
+		
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism

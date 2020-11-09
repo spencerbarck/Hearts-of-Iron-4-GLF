@@ -1059,7 +1059,7 @@
 		y = 1
 		relative_position_id = GLF_strengthen_the_chief
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_strengthen_the_chief }
 
 		mutually_exclusive = { focus = GLF_settle_the_score }
@@ -1079,14 +1079,37 @@
 	}
 
 	focus = {
+		id = GLF_the_detroit_revolution
+		icon = GFX_goal_GLF_the_detroit_revolution
+		x = 0
+		y = 2
+		relative_position_id = GLF_community_of_tribes
+
+		cost = 0.1
+		prerequisite = { focus = GLF_community_of_tribes }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			start_civil_war = {
+			 ruling_party = communism
+			 ideology = neutrality
+			 size = var:party_popularity@neutrality
+			}
+		}
+	}
+
+	focus = {
 		id = GLF_soviet_invitation
 		icon = GFX_goal_GLF_soviet_invitation
 		x = 0
 		y = 1
-		relative_position_id = GLF_community_of_tribes
+		relative_position_id = GLF_the_detroit_revolution
 
 		cost = 10
-		prerequisite = { focus = GLF_community_of_tribes }
+		prerequisite = { focus = GLF_the_detroit_revolution }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1101,7 +1124,7 @@
 		id = GLF_new_world_communism
 		icon = GFX_goal_GLF_new_world_communism
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GLF_soviet_invitation
 
 		cost = 10
@@ -1120,7 +1143,7 @@
 		id = GLF_seduce_the_red_wolf
 		icon = GFX_goal_GLF_seduce_the_red_wolf
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = GLF_community_of_tribes
 
 		cost = 10
@@ -1183,7 +1206,7 @@
 	focus = {
 		id = GLF_tirpitz_plan_promise
 		icon = GFX_goal_GLF_tirpitz_plan_promise
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GLF_german_invitation
 
@@ -1315,7 +1338,7 @@
 
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
-			add_political_power = 150
+			add_political_power = 25
 			#As per generic
 		}
 	}
@@ -1712,7 +1735,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 0.4
+			add_war_support = 0.3
 		}
 	}
 
@@ -1775,7 +1798,7 @@
 	focus = {
 		id = GLF_great_lakes_industrial_council
 		icon = GFX_goal_GLF_great_lakes_industrial_council
-		x = 10
+		x = 8
 		y = 1
 		relative_position_id = GLF_rally_the_lake_chiefs
 		
@@ -1805,7 +1828,7 @@
 		id = GLF_industrial_lake_projects
 		icon = GFX_goal_GLF_industrial_lake_projects
 		x = 0
-		y = 6
+		y = 7
 		relative_position_id = GLF_great_lakes_industrial_council
 
 		cost = 5
@@ -2238,7 +2261,7 @@
 	focus = {
 		id = GLF_warrior_spirit
 		icon = GFX_goal_GLF_warrior_spirit
-		x = 50
+		x = 43
 		y = 0
 
 		cost = 10
