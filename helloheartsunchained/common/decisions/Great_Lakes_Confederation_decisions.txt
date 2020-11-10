@@ -837,31 +837,7 @@ GLF_the_cold_peace_decisions = {
 			set_country_flag = GLF_cold_peace_done
 			clr_country_flag = ask_for_canada
 			
-			transfer_state = 332
-			
-			every_state = { 
-				limit = {
-					AND{
-						is_owned_by = CAN 
-						NOT{state = 739}
-					}
-				}
-				PREV = {transfer_state = PREV}
-			}
-			white_peace = ENG
-			
-			ENG = {
-				transfer_state = 739
-			}
-			
-			every_country{
-				limit = {
-					any_allied_country = {
-						tag = ENG
-					}
-				}
-				white_peace = GLF
-			}
+			GLF = { country_event = { id = glf.34} }
 		}
 		
 		ai_will_do = {
@@ -946,6 +922,11 @@ GLF_spanish_civil_war_decisions = {
 		remove_effect = {
 			add_opinion_modifier = { target = SPR modifier = GLF_contact_spain }	
 			SPR = { add_opinion_modifier = { target = ROOT modifier = GLF_contact_spain } }	
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1051,6 +1032,11 @@ GLF_spanish_civil_war_decisions = {
 		remove_effect = {
 			add_opinion_modifier = { target = D01 modifier = GLF_contact_spain }	
 			D01 = { add_opinion_modifier = { target = ROOT modifier = GLF_contact_spain } }	
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -1348,6 +1334,35 @@ GLF_great_north_confederation_decisions = {
 		
 		remove_effect = {
 			add_state_core = 468
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GLF_incorperate_nova_scotia_tribes= {
+
+		icon = GFX_decision_eng_trade_unions_support
+		highlight_states = { state = 464 }
+		fire_only_once = yes	
+		
+		cost = 10
+		
+		available = {
+			controls_state = 465
+			controls_state = 464
+		}
+		
+		visible = {
+			#always = no
+		}
+		
+		days_remove = 30
+		
+		remove_effect = {
+			controls_state = 465
+			add_state_core = 464
 		}
 		
 		ai_will_do = {

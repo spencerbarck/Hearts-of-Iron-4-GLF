@@ -162,6 +162,19 @@
  glf.33.a:0 "Allow him free passage"
  glf.33.b:0 "He might be up to something"
  
+ glf.34.title:0 "Begin the Queen Charlotte Islands Conference"
+ glf.34.a:0 "They are tired of this war"
+ 
+ glf.35.title:0 "Give up Canada?"
+ glf.35.a:0 "accept"
+ glf.35.b:0 "reject"
+ 
+ glf.36.title:0 "Cold Peace accepted"
+ glf.36.a:0 "The war is over"
+ 
+ glf.37.title:0 "Cold Peace rejected"
+ glf.37.a:0 "This was will never end"
+ 
  
  
  

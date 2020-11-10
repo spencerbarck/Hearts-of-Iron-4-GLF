@@ -24,7 +24,7 @@
 		x = 3
 		y = 0
 
-		cost = 1
+		cost = 0.1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -173,7 +173,7 @@
 		y = 4
 		relative_position_id = GLF_our_path_to_the_sea
 
-		cost = 1
+		cost = 0.1
 		prerequisite = { focus = GLF_our_path_to_the_sea }
 
 		cancel_if_invalid = yes
@@ -201,7 +201,7 @@
 
 		}
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_the_great_portage }
 
 		cancel_if_invalid = yes
@@ -241,7 +241,7 @@
 
 		}
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_the_great_portage }
 
 		cancel_if_invalid = yes
@@ -279,7 +279,7 @@
 		bypass = {
 		}
 
-		cost = 1
+		cost = 0.1
 		prerequisite = { focus = GLF_the_great_portage}
 
 		cancel_if_invalid = yes
@@ -303,7 +303,7 @@
 		y = 1
 		relative_position_id = GLF_our_path_to_the_sea
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_our_path_to_the_sea }
 
 		available = { 
@@ -342,7 +342,7 @@
 		y = 1
 		relative_position_id = GLF_s_illinois_for_n_new_england
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_s_illinois_for_n_new_england }
 
 		available = { 
@@ -368,7 +368,7 @@
 		y = 1
 		relative_position_id = GLF_settle_n_new_england
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_settle_n_new_england }
 
 		available = { 
@@ -448,7 +448,7 @@
 		y = 1
 		relative_position_id = GLF_international_war_parade
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_international_war_parade }
 
 		cancel_if_invalid = yes
@@ -473,7 +473,7 @@
 		y = 1
 		relative_position_id = GLF_expand_our_confederation
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_expand_our_confederation }
 
 		cancel_if_invalid = yes
@@ -504,7 +504,7 @@
 
 		}
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_call_the_warchiefs }
 
 		cancel_if_invalid = yes
@@ -537,7 +537,7 @@
 		bypass = {
 		}
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_assume_the_northern_throne }
 
 		cancel_if_invalid = yes
@@ -636,7 +636,7 @@
 		bypass = {
 		}
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_protect_the_new_ports }
 
 		cancel_if_invalid = yes
@@ -667,7 +667,7 @@
 
 		}
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_assume_the_northern_throne }
 
 		cancel_if_invalid = yes
@@ -694,7 +694,7 @@
 		y = 6
 		relative_position_id = GLF_international_war_parade
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_international_war_parade }
 		prerequisite = { focus = GLF_end_the_gentle_side focus = GLF_tribes_in_the_20th_century}
 		mutually_exclusive = { focus = GLF_strengthen_the_chief focus = GLF_invite_ambassadors}
@@ -716,7 +716,7 @@
 		y = 1
 		relative_position_id = GLF_this_land_is_our_land
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_this_land_is_our_land }
 		mutually_exclusive = { focus = GLF_reject_the_old_world }
 
@@ -740,7 +740,7 @@
 		y = 1
 		relative_position_id = GLF_this_land_is_our_land
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_this_land_is_our_land }
 		mutually_exclusive = { focus = GLF_the_great_north }
 
@@ -763,7 +763,7 @@
 		y = 1
 		relative_position_id = GLF_reject_the_old_world
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_reject_the_old_world }
 
 		cancel_if_invalid = yes
@@ -783,7 +783,7 @@
 		y = 1
 		relative_position_id = GLF_return_to_isolation
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_return_to_isolation }
 
 		cancel_if_invalid = yes
@@ -802,7 +802,7 @@
 		y = 1
 		relative_position_id = GLF_seize_foreign_assets
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_seize_foreign_assets }
 
 		cancel_if_invalid = yes
@@ -821,7 +821,7 @@
 		y = 1
 		relative_position_id = GLF_the_great_north
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_the_great_north }
 
 		cancel_if_invalid = yes
@@ -844,7 +844,7 @@
 		y = 1
 		relative_position_id = GLF_ideas_from_the_south
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_ideas_from_the_south }
 
 		cancel_if_invalid = yes
@@ -864,7 +864,7 @@
 		y = 1
 		relative_position_id = GLF_appease_the_us
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_appease_the_us }
 
 		cancel_if_invalid = yes
@@ -1108,7 +1108,7 @@
 		y = 1
 		relative_position_id = GLF_the_detroit_revolution
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_the_detroit_revolution }
 
 		cancel_if_invalid = yes
@@ -1127,7 +1127,7 @@
 		y = 1
 		relative_position_id = GLF_soviet_invitation
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_soviet_invitation }
 
 		cancel_if_invalid = yes
@@ -1146,7 +1146,7 @@
 		y = 1
 		relative_position_id = GLF_community_of_tribes
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_community_of_tribes }
 
 		cancel_if_invalid = yes
@@ -1191,7 +1191,7 @@
 		y = 1
 		relative_position_id = GLF_settle_the_score
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_settle_the_score }
 
 		cancel_if_invalid = yes
@@ -1210,7 +1210,7 @@
 		y = 1
 		relative_position_id = GLF_german_invitation
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_german_invitation }
 
 		cancel_if_invalid = yes
@@ -1286,7 +1286,7 @@
 		y = 1
 		relative_position_id = GLF_invite_ambassadors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_invite_ambassadors }
 
 		cancel_if_invalid = yes
@@ -1309,7 +1309,7 @@
 		y = 1
 		relative_position_id = GLF_british_portage
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_british_portage }
 
 		cancel_if_invalid = yes
@@ -1329,7 +1329,7 @@
 		y = 1
 		relative_position_id = GLF_invite_ambassadors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_invite_ambassadors }
 
 		cancel_if_invalid = yes
@@ -1350,7 +1350,7 @@
 		y = 1
 		relative_position_id = GLF_international_shawnee_volunteers
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_international_shawnee_volunteers }
 
 		cancel_if_invalid = yes
@@ -1661,7 +1661,7 @@
 		y = 1
 		relative_position_id = GLF_re-form_the_aayaash
 
-		cost = 1
+		cost = 0.1
 		prerequisite = { focus = GLF_re-form_the_aayaash }
 		mutually_exclusive = { focus = GLF_appoint_honovi}
 
@@ -1727,7 +1727,7 @@
 		y = 1
 		relative_position_id = GLF_re-form_the_aayaash
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_re-form_the_aayaash}
 
 		cancel_if_invalid = yes
@@ -1746,7 +1746,7 @@
 		y = 1
 		relative_position_id = GLF_end_the_gentle_side
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_end_the_gentle_side}
 
 		cancel_if_invalid = yes
@@ -1774,7 +1774,7 @@
 		y = 1
 		relative_position_id = GLF_revisit_the_treaties
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_revisit_the_treaties}
 
 		cancel_if_invalid = yes
@@ -1802,7 +1802,7 @@
 		y = 1
 		relative_position_id = GLF_rally_the_lake_chiefs
 		
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_rally_the_lake_chiefs }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -1831,7 +1831,7 @@
 		y = 7
 		relative_position_id = GLF_great_lakes_industrial_council
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_great_lakes_industrial_council }
 
 		cancel_if_invalid = yes
@@ -1859,7 +1859,7 @@
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -1886,7 +1886,7 @@
 		y = 1
 		relative_position_id = GLF_indstrialize_lake_ontario
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_indstrialize_lake_ontario }
 
 		cancel_if_invalid = yes
@@ -1914,7 +1914,7 @@
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -1941,7 +1941,7 @@
 		y = 1
 		relative_position_id = GLF_indstrialize_lake_erie
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_indstrialize_lake_erie }
 
 		cancel_if_invalid = yes
@@ -1964,7 +1964,7 @@
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -1991,7 +1991,7 @@
 		y = 1
 		relative_position_id = GLF_indstrialize_lake_huron
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_indstrialize_lake_huron }
 
 		cancel_if_invalid = yes
@@ -2011,7 +2011,7 @@
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -2038,7 +2038,7 @@
 		y = 1
 		relative_position_id = GLF_indstrialize_lake_michigan
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_indstrialize_lake_michigan }
 
 		cancel_if_invalid = yes
@@ -2057,7 +2057,7 @@
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 15
+		cost = 0.15
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -2084,7 +2084,7 @@
 		y = 2
 		relative_position_id = GLF_indstrialize_lake_superior
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_indstrialize_lake_superior }
 
 		cancel_if_invalid = yes
@@ -2132,7 +2132,7 @@
 		y = 1
 		relative_position_id = GLF_center_of_america
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_center_of_america }
 		prerequisite = { focus = GLF_great_lakes_circuit focus = GLF_save_the_land }
 
@@ -2152,7 +2152,7 @@
 		y = 1
 		relative_position_id = GLF_ontario_pathways
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_ohio_aluminum }
 		prerequisite = { focus = GLF_ontario_pathways }
 
@@ -2213,7 +2213,7 @@
 		y = 1
 		relative_position_id = GLF_michigan_research_institute
 
-		cost = 5
+		cost = 0.1
 		prerequisite = { focus = GLF_michigan_research_institute }
 		prerequisite = { focus = GLF_repair_sacred_ground }
 
@@ -2233,7 +2233,7 @@
 		y = 1
 		relative_position_id = GLF_minnesota_natural_resources_institute
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_minnesota_natural_resources_institute }
 
 		cancel_if_invalid = yes
@@ -2264,7 +2264,7 @@
 		x = 43
 		y = 0
 
-		cost = 10
+		cost = 0.1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2282,7 +2282,7 @@
 		y = 1
 		relative_position_id = GLF_warrior_spirit
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_warrior_spirit}
 
 		cancel_if_invalid = yes
@@ -2301,7 +2301,7 @@
 		y = 1
 		relative_position_id = GLF_forest_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_forest_warriors}
 
 		cancel_if_invalid = yes
@@ -2325,7 +2325,7 @@
 		y = 1
 		relative_position_id = GLF_strike_fast
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_strike_fast}
 
 		cancel_if_invalid = yes
@@ -2347,7 +2347,7 @@
 		y = 1
 		relative_position_id = GLF_detroit_auto
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_detroit_auto}
 
 		cancel_if_invalid = yes
@@ -2371,7 +2371,7 @@
 		y = 1
 		relative_position_id = GLF_light_tank_tactics
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_light_tank_tactics}
 
 		cancel_if_invalid = yes
@@ -2390,7 +2390,7 @@
 		y = 1
 		relative_position_id = GLF_forest_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_forest_warriors}
 
 		cancel_if_invalid = yes
@@ -2413,7 +2413,7 @@
 		y = 1
 		relative_position_id = GLF_strike_smart
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_strike_smart}
 
 		cancel_if_invalid = yes
@@ -2453,7 +2453,7 @@
 		y = 1
 		relative_position_id = GLF_new_ottawa_generals
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_new_ottawa_generals}
 
 		cancel_if_invalid = yes
@@ -2483,7 +2483,7 @@
 		y = 1
 		relative_position_id = GLF_connect_the_warbands
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_connect_the_warbands}
 
 		cancel_if_invalid = yes
@@ -2502,7 +2502,7 @@
 		y = 1
 		relative_position_id = GLF_forest_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_forest_warriors}
 
 		cancel_if_invalid = yes
@@ -2524,7 +2524,7 @@
 		y = 1
 		relative_position_id = GLF_strike_hard
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_strike_hard}
 
 		cancel_if_invalid = yes
@@ -2547,7 +2547,7 @@
 		y = 1
 		relative_position_id = GLF_stronger_small_arms
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_stronger_small_arms}
 
 		cancel_if_invalid = yes
@@ -2570,7 +2570,7 @@
 		y = 1
 		relative_position_id = GLF_great_north_guns
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_great_north_guns}
 
 		cancel_if_invalid = yes
@@ -2594,7 +2594,7 @@
 		y = 1
 		relative_position_id = GLF_examine_foreign_tactics
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_swift_like_the_tide focus = GLF_examine_foreign_tactics focus = GLF_fight_shell_for_shell}
 
 		cancel_if_invalid = yes
@@ -2616,7 +2616,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2635,7 +2635,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2654,7 +2654,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2673,7 +2673,7 @@
 		y = 1
 		relative_position_id = GLF_warrior_spirit
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_warrior_spirit}
 
 		cancel_if_invalid = yes
@@ -2696,7 +2696,7 @@
 		y = 1
 		relative_position_id = GLF_sky_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_sky_warriors}
 
 		cancel_if_invalid = yes
@@ -2718,7 +2718,7 @@
 		y = 1
 		relative_position_id = GLF_chaos_from_above
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_chaos_from_above}
 
 		cancel_if_invalid = yes
@@ -2741,7 +2741,7 @@
 		y = 1
 		relative_position_id = GLF_sky_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_sky_warriors}
 
 		cancel_if_invalid = yes
@@ -2761,7 +2761,7 @@
 		y = 1
 		relative_position_id = GLF_invent_the_thunderbird
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_invent_the_thunderbird}
 
 		cancel_if_invalid = yes
@@ -2784,7 +2784,7 @@
 		y = 1
 		relative_position_id = GLF_sky_warriors
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_sky_warriors}
 
 		cancel_if_invalid = yes
@@ -2803,7 +2803,7 @@
 		y = 1
 		relative_position_id = GLF_great_lake_aces
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_great_lake_aces}
 
 		cancel_if_invalid = yes
@@ -2826,7 +2826,7 @@
 		y = 1
 		relative_position_id = GLF_improve_the_thunderbird
 
-		cost = 10
+		cost = 0.1
 		prerequisite = { focus = GLF_close_warband_support focus = GLF_improve_the_thunderbird focus = GLF_carrier_practice}
 
 		cancel_if_invalid = yes

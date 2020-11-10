@@ -124,6 +124,7 @@ GLF_great_north_confederation_decisions = {
 		state = 469
 		state = 466
 		state = 468
+		state = 464
 		zoom = 300
 	}
 

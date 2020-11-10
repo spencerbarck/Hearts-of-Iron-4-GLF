@@ -1178,3 +1178,104 @@ country_event = {
 		name = glf.33.b
 	}
 }
+
+# GLF cold peace end send to England
+country_event = {
+	id = glf.34
+	title = glf.34.title
+	desc = glf.34.d
+	picture = GFX_report_event_great_lakes_confederation
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # They are tired of this war
+		name = glf.34.a
+		ENG = {country_event = { id = glf.35}}
+		
+	}
+}
+
+# GLF cold peace end send England decide
+country_event = {
+	id = glf.35
+	title = glf.35.title
+	desc = glf.35.d
+	picture = GFX_report_event_great_lakes_confederation
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # accept
+		name = glf.35.a
+		ai_chance = { factor = 100 }
+		FROM = { country_event = { id = glf.36} }
+	}
+	
+	option = { # reject
+		name = glf.35.b
+		FROM = { country_event = { id = glf.37} }
+	}
+}
+
+# GLF cold peace end back from England accept
+country_event = {
+	id = glf.36
+	title = glf.36.title
+	desc = glf.36.d
+	picture = GFX_report_event_great_lakes_confederation
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # the war is over
+		name = glf.36.a
+		
+		transfer_state = 332
+			
+			every_state = { 
+				limit = {
+					AND{
+						is_owned_by = CAN 
+						NOT{state = 739}
+					}
+				}
+				PREV = {transfer_state = PREV}
+			}
+			white_peace = ENG
+			
+			ENG = {
+				transfer_state = 739
+			}
+			
+			every_country{
+				limit = {
+					any_allied_country = {
+						tag = ENG
+					}
+				}
+				white_peace = GLF
+			}
+		
+		
+	}
+}
+
+# GLF cold peace end back from England reject
+country_event = {
+	id = glf.37
+	title = glf.37.title
+	desc = glf.37.d
+	picture = GFX_report_event_great_lakes_confederation
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # this war may never end
+		name = glf.37.a
+	}
+}

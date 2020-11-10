@@ -175,6 +175,7 @@ ideas = {
 		}
 
 		GLF_war_parade_focus = {
+			picture = ast_volunteer_defence_corps
 
 			allowed = {
 				original_tag = GLF
@@ -186,8 +187,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-			picture = idea_ast_volunteer_defence_corps
 
 			modifier = {
 				war_support_factor = 0.05
@@ -271,7 +270,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = spr_crush_the_revolution
+			picture = SPR_crush_the_revolution
 
 			modifier = {
 				democratic_drift = -0.1
@@ -312,7 +311,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = mex_politicised_army_2
+			picture = MEX_politicised_army_2
 
 			modifier = {
 				army_core_attack_factor = 0.3
@@ -354,7 +353,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = spr_international_brigades
+			picture = SPR_international_brigades
 
 			modifier = {
 				democratic_drift = -0.1
@@ -584,7 +583,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = generic_infantry_bonus
 
 			modifier = {
 				training_time_factor = -0.1
@@ -604,7 +603,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = FRA_sncac
 
 			modifier = {
 				training_time_factor = -0.1
@@ -625,7 +624,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = generic_air_manufacturer_1
 
 			modifier = {
 				army_speed_factor = 0.15
@@ -645,7 +644,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = general_staff
 
 			modifier = {
 				land_reinforce_rate = 0.3
@@ -665,7 +664,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = generic_artillery_regiments
 
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -687,7 +686,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = triumphant_will
 
 			modifier = {
 				air_paradrop_attack_factor = 0.20
@@ -706,7 +705,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = CZE_skoda_works
 
 			modifier = {
 				amphibious_invasion = 0.20
@@ -727,7 +726,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = air_war_plans_division_focus
 
 			modifier = {
 				special_forces_attack_factor = 0.2
@@ -750,7 +749,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = generic_air_payment
 
 			modifier = {
 				air_ace_generation_chance_factor = 0.30
@@ -770,7 +769,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = idea_tur_balkan_central_bank_wealthy_greece
+			picture = generic_central_management
 
 			modifier = {
 				production_speed_industrial_complex_factor = 0.4
@@ -811,7 +810,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = tur_golden_age_of_the_wolf
+			picture = CZE_planning_bonus
 
 			modifier = {
 				stability_factor = 0.15
@@ -853,7 +852,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = escort_effort_focus
 
 			modifier = {
 				trade_opinion_factor = 0.25
@@ -876,7 +875,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_local_self_management
 
 			modifier = {
 				war_support_factor = 0.1
@@ -898,7 +897,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = vittoria_mutilata
 
 			modifier = {
 				stability_factor = 0.1
