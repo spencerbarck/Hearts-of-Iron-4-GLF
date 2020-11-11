@@ -1452,7 +1452,7 @@
 		relative_position_id = GLF_support_our_scholars
 
 		cost = 0.1
-		prerequisite = { focus = GLF_the_new_world_institute focus = GLF_free_nixkamich}
+		prerequisite = { focus = GLF_the_new_world_institute focus = GLF_free_nixkamich_tree}
 		mutually_exclusive = { focus = GLF_no_crime_done }
 
 		cancel_if_invalid = yes
@@ -1461,7 +1461,7 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = GLF_free_nixkamich }
+				limit = { has_idea = GLF_free_nixkamich_tree }
 				GLF = { country_event = { id = glf.15 }}
 				else = {
 					if = {
@@ -1569,8 +1569,8 @@
 	}
 
 	focus = {
-		id = GLF_free_nixkamich
-		icon = GFX_goal_GLF_free_nixkamich
+		id = GLF_free_nixkamich_tree
+		icon = GFX_goal_GLF_free_nixkamich_tree
 		x = 0
 		y = 1
 		relative_position_id = GLF_support_our_soldiers
@@ -1596,10 +1596,10 @@
 		icon = GFX_goal_GLF_no_crime_done
 		x = 0
 		y = 1
-		relative_position_id = GLF_free_nixkamich
+		relative_position_id = GLF_free_nixkamich_tree
 
 		cost = 0.1
-		prerequisite = { focus = GLF_free_nixkamich}
+		prerequisite = { focus = GLF_free_nixkamich_tree}
 		mutually_exclusive = { focus = GLF_the_trial_of_nixkamich }
 
 		cancel_if_invalid = yes
@@ -1677,7 +1677,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = GLF_free_nixkamich
+			remove_ideas = GLF_free_nixkamich_tree
 			create_country_leader = {
 				name = "Nixkamich"
 				desc = ""

@@ -61,5 +61,31 @@
  GLF_return_to_isolation_focus:0 "Strong Isolation"
  
  GLF_repair_sacred_ground_focus:0 "Repair Sacred Ground"
+ 
+ GLF_forest_warriors_focus:0 "Forest Warriors"
+ 
+ GLF_forest_warriors2_focus:0 "Bgwajinini"
+ 
+ GLF_swift_like_the_tide_focus:0 "Swift like the Tide"
+ 
+ GLF_examine_foreign_tactics_focus:0 "Examine Foreign Tactics"
+ 
+ GLF_fight_shell_for_shell_focus:0 "Fight Shell for Shell"
+ 
+ GLF_thunderers_focus:0 "Thunderers"
+ 
+ GLF_water_lynx_focus:0 "Water Lynx"
+ 
+ GLF_wiingdoo_hunters_focus:0 "Wiingidoo Incarnate"
+ 
+ GLF_great_lake_aces_focus:0 "Great Lakes Aces"
+ 
+ USA_lakes_communism_spread:0 "Lakes Communism Spread"
+ 
+ GLF_quebec_capital:0 "Quebec Capital"
+ 
+ GLF_chicago_capital:0 "Chicago Capital"
+ 
+ GLF_detroit_capital:0 "Detroit Reaffermed"
 
 #End GLF Focus ideas

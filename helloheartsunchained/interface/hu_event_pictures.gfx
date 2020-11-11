@@ -4,6 +4,36 @@ spriteTypes = {
 		name = "GFX_report_event_great_lakes_confederation"
 		texturefile = "gfx/event_pictures/report_event_great_lakes_confederation.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_operation_dark_feather"
+		texturefile = "gfx/event_pictures/report_event_operation_dark_feather.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_operation_dark_feather_failure"
+		texturefile = "gfx/event_pictures/report_event_operation_dark_feather_failure.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_operation_dark_feather_success"
+		texturefile = "gfx/event_pictures/report_event_operation_dark_feather_success.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_the_chief_and_the_radio"
+		texturefile = "gfx/event_pictures/report_event_the_chief_and_the_radio.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_trial_of_nixkamich"
+		texturefile = "gfx/event_pictures/report_event_trial_of_nixkamich.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_canada_agrees_moosonee"
+		texturefile = "gfx/event_pictures/report_event_canada_agrees_moosonee.dds"
+	}
 
 	spriteType = {
 		name = "GFX_news_event_lakes_fair"

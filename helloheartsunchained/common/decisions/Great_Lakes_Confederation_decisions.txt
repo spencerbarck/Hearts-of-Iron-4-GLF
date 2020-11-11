@@ -1361,7 +1361,7 @@ GLF_great_north_confederation_decisions = {
 		days_remove = 30
 		
 		remove_effect = {
-			controls_state = 465
+			add_state_core = 465
 			add_state_core = 464
 		}
 		

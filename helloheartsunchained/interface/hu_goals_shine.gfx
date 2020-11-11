@@ -1511,7 +1511,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_goal_GLF_support_our_scholars_side_shine"
+		name = "GFX_goal_GLF_support_our_scholars_shine"
 		texturefile = "gfx/interface/goals/focus_GLF_support_our_scholars.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

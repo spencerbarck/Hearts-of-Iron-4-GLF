@@ -9,7 +9,7 @@ country_event = {
 	id = glf.1
 	title = glf.1.title
 	desc = glf.1.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_the_chief_and_the_radio
 
 	#is_triggered_only = yes
 
@@ -71,7 +71,7 @@ country_event = {
 	id = glf.2
 	title = glf.2.t
 	desc = glf.2.d
-	picture = GFX_report_event_generic_sign_treaty3
+	picture = GFX_report_event_canada_agrees_moosonee
 
 	is_triggered_only = yes
 
@@ -107,7 +107,7 @@ country_event = {
 	id = glf.3
 	title = glf.3.t
 	desc = glf.3.d
-	picture = GFX_report_event_generic_sign_treaty3
+	picture = GFX_report_event_canada_agrees_moosonee
 
 	is_triggered_only = yes
 
@@ -141,7 +141,7 @@ country_event = {
 	id = glf.4
 	title = glf.4.t
 	desc = glf.4.d
-	picture = GFX_report_event_poland_rejects
+	picture = GFX_report_event_canada_agrees_moosonee
 
 	is_triggered_only = yes
 
@@ -329,7 +329,7 @@ country_event = {
 	id = glf.13
 	title = glf.13.t
 	desc = glf.13.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_operation_dark_feather
 	
 	is_triggered_only = yes
 
@@ -354,7 +354,7 @@ country_event = {
 	id = glf.14
 	title = glf.14.t
 	desc = glf.14.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_operation_dark_feather_success
 	
 	is_triggered_only = yes
 
@@ -371,7 +371,7 @@ country_event = {
 	id = glf.66
 	title = glf.66.t
 	desc = glf.66.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_operation_dark_feather_failure
 	
 	is_triggered_only = yes
 
@@ -388,7 +388,7 @@ country_event = {
 	id = glf.15
 	title = glf.15.t
 	desc = glf.15.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_trial_of_nixkamich
 	
 	is_triggered_only = yes
 
@@ -421,7 +421,7 @@ country_event = {
 	id = glf.16
 	title = glf.16.t
 	desc = glf.16.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_trial_of_nixkamich
 	
 	is_triggered_only = yes
 
@@ -450,7 +450,7 @@ country_event = {
 	id = glf.17
 	title = glf.17.t
 	desc = glf.17.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_trial_of_nixkamich
 	
 	is_triggered_only = yes
 
@@ -575,7 +575,7 @@ country_event = {
 		
 		create_corps_commander = {#male
 			name = "Jacques Maple-Fox Dextraze"
-			picture = "Portrait_GLF_General_f_blue.dds"
+			picture = "greatlakesconfederationdextraze.dds"
 			traits = { infantry_officer inflexible_strategist trickster}
 			skill = 5
 

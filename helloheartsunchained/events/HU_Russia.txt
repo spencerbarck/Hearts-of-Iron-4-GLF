@@ -1,6 +1,6 @@
 ﻿add_namespace = hu_russia
 
-# Great Lakes Confederation asks to join the allies
+# Great Lakes Confederation asks to join the comintern
 country_event = {
 	id = hu_russia.1
 	title = hu_russia.1.t
@@ -9,7 +9,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
+	option = { #accept
 		name = hu_russia.1.a
 		add_to_faction = FROM
 		FROM = {
@@ -25,7 +25,7 @@ country_event = {
 		}
 	}
 
-	option = {
+	option = { #reject
 		name = hu_russia.1.b
 		ai_chance = { factor = 0 }
 		FROM = {

@@ -1,8 +1,9 @@
 ﻿l_english:
- glf.1.title:0 "The Cheif and the Radio"
- glf.1.d:0 ""
+ glf.1.title:0 "The Chief and the Radio"
+ glf.1.d:0 "For the first time ever Chief Kah-ge-ga-gah-bowh addressed the Confederation on the radio tonight. All across the Great Lakes from Minnesota to Ontario citizens listened as the champion of the gentle side addressed the people's concerns. Following the chiefs address members from every tribe elected representative to give a speech these tribes included the Ojibwe, Ottawa, Heuron, Shawnee, Miami, Winnebago, Potawatomi, Illinois, Fox Menominee, and many others including the Iroquois Confederation, and exiled tribes from European occupied lands. Finally after what seemed like a marathon of speeches Kah-ge-ga-gah-bowh returned to conclude the event his last words moving the Confederation."
  glf.1.a:0 "Call for new unity"
  glf.1.b:0 "Praise the tribes"
+ 
  glf.29.title:0 "Britain accepts our request"
  glf.29.d:0 "Britain has accepted our request to join the allies. Hopefully we can count on their support if we give them ours."
  glf.29.a:0 "We will help the Colonizers dispite our hisotry!"
@@ -11,24 +12,30 @@
  glf.30.a:0 "Typical Colonizers. It is their loss!"
  
  glf.13.t:0 "Operation Dark Feather"
+ glf.13.d:0 "The operation to free the former chief of the Confederation is ready. Tribes friendly to us living in Canadaian territory have sheltered our most elite soldiers, these brave warriors will face insurmountable odds assaulting the prison and escaping with the dark chief. For weeks of planning military strategists have debated the best way to get the chief back across the border, they have decided that while it may be risky a seaplane will be stationed nearby and if Nixkhamich is freed from his prison he will be airlifted back to our borders. If this mission fails we will likely never get a second chance and our relations with Canada will further sour."
  glf.13.a:0 "Be as silent as the midnight woods"
  
  glf.14.t:0 "Operation Success"
+ glf.14.d:0 "Nixkhamich is free! In the dead of night our brave warriors surprised the prison guards and located where Nixkhamich was being held. Before word got out that he was free his ace pilot daughter Honovi flew him by sea plane through Canadian territory and back home to the Great Lakes. We have yet to hear from Canadian officials but they will no doubt be furious."
  glf.14.a:0 "Our warriors are truly great!"
  
  glf.66.t:0 "Operation Failed"
+ glf.66.d:0 "Nixkhamich has died! The operation was a failure. Everything seemed to be going according the plan, the prison guards were surprised, Nixkhamich was freed, but then a Canadian garrison intercepted our forces and during the ensuing firefight Nixkhamich was shot. Our forces retreated with his body. Tribes across the Confederation are silent today as they mourn for this controversial yet strong figure."
  glf.66.a:0 "This is a sad day"
  
  glf.15.t:0 "Trial of the free Nixkamich"
+ glf.15.d:0 "Nixkhamich stands before the Confederation charged with warmongering and sabotage of foreign relations. During his 20 year reign as Chief of the Confederation he increased the size and power of our armed forces, cut what little ties we had to the Europeans, and left a permanent mark on our reputation with the world by invading Canada and the United States while their forces were occupied by the war in Europe. His supporters say that he acted in the Confederations best interest and re-took lands that rightfully belong to the Confederation. The verdict is left to the highest voice in the land, the chief of the Confederation."
  glf.15.a:0 "Put him in our prison"
  glf.15.b:0 "Execute him for his crimes"
  glf.15.c:0 "He fought for the tribes in his own way"
  
  glf.16.t:0 "Trial of a prisoner"
+ glf.16.d:0 "Nixkhamich may not be in our custody but we can still hold a trial for him. Nixkhamich is charged with warmongering and sabotage of foreign relations. During his 20 year reign as Chief of the Confederation he increased the size and power of our armed forces, cut what little ties we had to the Europeans, and left a permanent mark on our reputation with the world by invading Canada and the United States while their forces were occupied by the war in Europe. His supporters say that he acted in the Confederations best interest and re-took lands that rightfully belong to the Confederation. The verdict is left to the highest voice in the land, the chief of the Confederation."
  glf.16.a:0 "He commited a crime and belongs in a prison"
  glf.16.b:0 "He fought for the tribes in his own way"
  
  glf.17.t:0 "Trial the dead"
+ glf.17.d:0 "Nixkhamich is gone but we can still discuss is actions and decide if they were right or wrong. During his 20 year reign as Chief of the Confederation he increased the size and power of our armed forces, cut what little ties we had to the Europeans, and left a permanent mark on our reputation with the world by invading Canada and the United States while their forces were occupied by the war in Europe. His supporters say that he acted in the Confederations best interest and re-took lands that rightfully belong to the Confederation. The verdict is left to the highest voice in the land, the chief of the Confederation."
  glf.17.a:0 "He commited a crime but may he rest in peace"
  glf.17.b:0 "He fought for the tribes in his own way"
 
@@ -36,6 +43,22 @@
  hu_britain.1.d:0 "A delagation from the Ojibwe tribe of the Great Lakes Confederation has come with an alliance offer from the Confederation. While these tribes are far across the ocean they can still send forces to help in war."
  hu_britain.1.a:0 "We welcome these powerful tribes"
  hu_britain.1.b:0 "An allience would be bad for us"
+ 
+ hu_usa.1.t:0 "The Great Lakes Confederation offers a trade"
+ hu_usa.1.a:0 "Accept the Trade"
+ hu_usa.1.b:0 "Decline the Trade"
+ 
+ hu_germany.1.t:0 "The Great Lakes Confederation asks to join the Axis"
+ hu_germany.1.a:0 "An ally next to The United States would be valuable"
+ hu_germany.1.b:0 "We do not need them"
+ 
+ hu_germany.2.t:0 "The Lakers want war with America"
+ hu_germany.2.a:0 "Togeather we will Triumph"
+ hu_germany.2.b:0 "We should bide our time"
+ 
+ hu_russia.1.t:0 "The Great Lakes Confederation wants to join the Comintern"
+ hu_russia.1.a:0 "Welcome these Americans"
+ hu_russia.1.b:0 "Decline"
 
  hu_news.1.t:0 "The Great Lakes Confederation Lake Fair"
  hu_news.1.d:0 "Thousands flocked to lake Superior today for the Great Lakes Confederation Lakes fair! Items on dispaly included finely woven dresses, extravagant canoes, beautiful beadwork, and newly modified rifles from America."
@@ -54,10 +77,12 @@
  hu_news.3.c:0 "The Confederation and Britain will never get along"
  
  glf.2.t:0 "The Lakers ask for Moose River"
+ glf.2.d:0 "Representatives from the Canadain government have told the chief of the Confederation that they will agree to cede the Moose River region to the Confederation. This largely uninhabited region borders the cold Hudson bay and could be turned into a seaport with the proper care. This gift from the Canadians signals an improved relationship between our two countries, as they have essentially split their country in two leaving east and west Canada no longer connected by land."
  glf.2.a:0 "They may have the wasteland"
  glf.2.b:0 "Canada will not be split in two"
  
  glf.3.t:0 "Canada agrees to cede Moose River"
+ glf.3.d:0 "Representatives from the Canadain government have told the chief of the Confederation that they will agree to cede the Moose River region to the Confederation. This largely uninhabited region borders the cold Hudson bay and could be turned into a seaport with the proper care. This gift from the Canadians signals an improved relationship between our two countries, as they have essentially split their country in two leaving east and west Canada no longer connected by land."
  glf.3.a:0 "Perhaps peace is possible"
  
  glf.4.t:0 "Canada refuses to cede Moose River"
