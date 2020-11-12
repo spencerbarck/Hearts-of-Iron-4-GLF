@@ -1461,7 +1461,7 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = GLF_free_nixkamich_tree }
+				limit = { has_idea = GLF_free_nixkamich }
 				GLF = { country_event = { id = glf.15 }}
 				else = {
 					if = {
@@ -1677,7 +1677,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = GLF_free_nixkamich_tree
+			remove_ideas = GLF_free_nixkamich
 			create_country_leader = {
 				name = "Nixkamich"
 				desc = ""
