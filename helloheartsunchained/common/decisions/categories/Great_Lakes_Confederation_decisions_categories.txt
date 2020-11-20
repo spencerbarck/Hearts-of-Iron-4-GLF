@@ -7,7 +7,7 @@ GLF_repurpose_trade_ships_decisions = {		#ID of category
 	
 	visible = {
 		always = yes
-		#has_completed_focus = GLF_repurpose_trade_ships
+		has_completed_focus = GLF_repurpose_trade_ships
 	}
 }
 
@@ -20,7 +20,7 @@ GLF_save_the_land_decisions = {
 	
 	visible = {
 		always = yes
-		#has_completed_focus = GLF_save_the_land
+		has_completed_focus = GLF_save_the_land
 	}
 	
 	on_map_area = {
@@ -45,7 +45,7 @@ GLF_new_world_communism_decisions = {
 	
 	visible = {
 		always = yes
-		#has_completed_focus = GLF_new_world_communism
+		has_completed_focus = GLF_new_world_communism
 	}
 	
 	visible_when_empty = yes
@@ -72,9 +72,8 @@ GLF_the_cold_peace_decisions = {
 	
 	visible = {
 		always = yes
-		#
-		#NOT { has_country_flag = GLF_cold_peace_done }
-		#has_completed_focus = GLF_the_cold_peace
+		NOT { has_country_flag = GLF_cold_peace_done }
+		has_completed_focus = GLF_the_cold_peace
 	}
 	
 	visible_when_empty = yes
@@ -88,10 +87,10 @@ GLF_spanish_civil_war_decisions = {
 	
 	visible = {
 		always = yes
-		#has_country_flag = GLF_observers_spain
-		#SPR = {
-		#	has_civil_war = yes
-		#}
+		has_country_flag = GLF_observers_spain
+		SPR = {
+			has_civil_war = yes
+		}
 	}
 }
 
@@ -103,10 +102,10 @@ GLF_italy_ethiopia_war_decisions = {
 	
 	visible = {
 		always = yes
-		#has_country_flag = GLF_observers_ethiopia
-		#ITA = {
-		#	has_war_with = ETH
-		#}	
+		has_country_flag = GLF_observers_ethiopia
+		ITA = {
+			has_war_with = ETH
+		}	
 	}
 }
 
@@ -119,13 +118,13 @@ GLF_great_north_confederation_decisions = {
 	
 	visible_when_empty = yes
 	
-	on_map_area = {
-		state = 473
-		state = 469
-		state = 466
-		state = 468
-		state = 464
-		zoom = 300
-	}
+	#on_map_area = {
+	#	state = 473
+	#	state = 469
+	#	state = 466
+	#	state = 468
+	#	state = 464
+	#	zoom = 300
+	#}
 
 }

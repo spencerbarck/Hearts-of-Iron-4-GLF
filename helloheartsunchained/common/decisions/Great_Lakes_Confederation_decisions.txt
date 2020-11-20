@@ -15,6 +15,7 @@ GLF_repurpose_trade_ships_decisions = {
 		days_re_enable = 35
 
 		visible = {
+			
 		}		
 
 		cost = 10
@@ -121,7 +122,7 @@ GLF_repurpose_trade_ships_decisions = {
 		}
 		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
-		#days_re_enable = 35	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		days_re_enable = 35	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
 
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
 		}		
@@ -779,7 +780,7 @@ GLF_the_cold_peace_decisions = {
 			NOT{has_country_flag = ask_for_canada}
 		}
 		available = {
-			#NOT{
+			NOT{
 				NOT {CAN {has_capitulated = yes}}
 				NOT {controls_state = 468}
 				NOT {controls_state = 809}
@@ -790,7 +791,7 @@ GLF_the_cold_peace_decisions = {
 				NOT {controls_state = 464}
 				NOT {controls_state = 473}
 				NOT {has_army_manpower = { size > 299999 }}
-			#}
+			}
 		}
 		complete_effect = {
 			set_country_flag = ask_for_canada
@@ -810,29 +811,29 @@ GLF_the_cold_peace_decisions = {
 		is_good = yes
 		
 		visible = {
-			#has_country_flag = ask_for_canada
-			#NOT{has_country_flag = GLF_cold_peace_done}
+			has_country_flag = ask_for_canada
+			NOT{has_country_flag = GLF_cold_peace_done}
 		}
 		
 		activation = {	
 			has_country_flag = ask_for_canada
-            #has_completed_focus = GLF_the_cold_peace
         }	
 		available = {
+			always = no
 			OR{
-				#NOT {CAN {has_capitulated = yes}}
-				#NOT {controls_state = 468}
-				#NOT {controls_state = 809}
-				#NOT {controls_state = 467}
-				#NOT {controls_state = 469}
-				#NOT {controls_state = 470}
-				#NOT {controls_state = 465}
-				#NOT {controls_state = 464}
-				#NOT {controls_state = 473}
-				#NOT {has_army_manpower = { size > 299999 }}
+				NOT {CAN ={has_capitulated = yes}}
+				NOT {controls_state = 468}
+				NOT {controls_state = 809}
+				NOT {controls_state = 467}
+				NOT {controls_state = 469}
+				NOT {controls_state = 470}
+				NOT {controls_state = 465}
+				NOT {controls_state = 464}
+				NOT {controls_state = 473}
+				NOT {has_army_manpower = { size > 299999 }}
 			}
 		}
-		days_mission_timeout = 2
+		days_mission_timeout = 30
 		timeout_effect = {  
 			set_country_flag = GLF_cold_peace_done
 			clr_country_flag = ask_for_canada
@@ -1107,6 +1108,7 @@ GLF_italy_ethiopia_war_decisions = {
 				} 
 				support = { 
 					engineer = { x = 0 y = 0 } 
+					artillery = { x = 0 y = 1 }
 				} 
 			}
 		}
@@ -1125,7 +1127,14 @@ GLF_great_north_confederation_decisions = {
 		fire_only_once = yes	
 		
 		available = {
-			#always = no
+			controls_state = 468
+			controls_state = 809
+			controls_state = 467
+			controls_state = 469
+			controls_state = 470
+			controls_state = 465
+			controls_state = 464
+			controls_state = 473
 		}
 		complete_effect = {
 			GLF = {set_cosmetic_tag = GNC_TRIBES}
@@ -1144,7 +1153,8 @@ GLF_great_north_confederation_decisions = {
 		fire_only_once = yes	
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
+			NOT={has_country_flag = moved_capital}
 		}
 		
 		cost = 10
@@ -1155,6 +1165,10 @@ GLF_great_north_confederation_decisions = {
 		
 		days_remove = 30
 		
+		complete_effect = {
+			set_country_flag = moved_capital
+		}
+		
 		remove_effect = {
 			add_victory_points = {
 				province = 12149
@@ -1162,6 +1176,7 @@ GLF_great_north_confederation_decisions = {
 			}
 			set_capital = 468
 			add_ideas = GLF_quebec_capital
+			
 		}
 		
 		ai_will_do = {
@@ -1181,10 +1196,15 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
+			NOT={has_country_flag = moved_capital}
 		}
 		
 		days_remove = 30
+		
+		complete_effect = {
+			set_country_flag = moved_capital
+		}
 		
 		remove_effect = {
 			set_capital = 395
@@ -1204,7 +1224,8 @@ GLF_great_north_confederation_decisions = {
 		cost = 10
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
+			NOT={has_country_flag = moved_capital}
 		}
 		
 		available = {
@@ -1212,6 +1233,10 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		days_remove = 30
+		
+		complete_effect = {
+			set_country_flag = moved_capital
+		}
 		
 		remove_effect = {
 			add_ideas = GLF_detroit_capital
@@ -1227,7 +1252,7 @@ GLF_great_north_confederation_decisions = {
 		highlight_states = { state = 466 }
 		fire_only_once = yes	
 		
-		cost = 10
+		cost = 20
 		
 		available = {
 			controls_state = 466
@@ -1235,10 +1260,10 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
 		}
 		
-		days_remove = 30
+		days_remove = 60
 		
 		remove_effect = {
 			add_state_core = 466
@@ -1256,7 +1281,7 @@ GLF_great_north_confederation_decisions = {
 		highlight_states = { state = 473 }
 		fire_only_once = yes	
 		
-		cost = 10
+		cost = 20
 		
 		available = {
 			controls_state = 470
@@ -1264,10 +1289,10 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
 		}
 		
-		days_remove = 30
+		days_remove = 60
 		
 		remove_effect = {
 			add_state_core = 470
@@ -1285,7 +1310,7 @@ GLF_great_north_confederation_decisions = {
 		highlight_states = { state = 469 }
 		fire_only_once = yes	
 		
-		cost = 10
+		cost = 20
 		
 		available = {
 			controls_state = 471
@@ -1296,10 +1321,10 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
 		}
 		
-		days_remove = 30
+		days_remove = 60
 		
 		remove_effect = {
 			add_state_core = 471
@@ -1320,17 +1345,17 @@ GLF_great_north_confederation_decisions = {
 		highlight_states = { state = 468 }
 		fire_only_once = yes	
 		
-		cost = 10
+		cost = 20
 		
 		available = {
 			controls_state = 468
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
 		}
 		
-		days_remove = 30
+		days_remove = 60
 		
 		remove_effect = {
 			add_state_core = 468
@@ -1347,7 +1372,7 @@ GLF_great_north_confederation_decisions = {
 		highlight_states = { state = 464 }
 		fire_only_once = yes	
 		
-		cost = 10
+		cost = 20
 		
 		available = {
 			controls_state = 465
@@ -1355,10 +1380,10 @@ GLF_great_north_confederation_decisions = {
 		}
 		
 		visible = {
-			#always = no
+			has_cosmetic_tag = GNC_TRIBES
 		}
 		
-		days_remove = 30
+		days_remove = 60
 		
 		remove_effect = {
 			add_state_core = 465

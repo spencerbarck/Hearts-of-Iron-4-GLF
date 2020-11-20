@@ -77,7 +77,7 @@
   GLF_this_land_is_our_land_desc:0 "The nations of the world are banding together into factions. Our Confederation knows the power of unity but we will not join a faction created by others. We have been betrayed before!"
   
   GLF_expand_our_confederation:0 "Expand our Confederation"
-  GLF_expand_our_confederation_desc:0 "There are many tribes still living in Canada and the United States. We entertain the possibility of expanding our Confederation to include the possibility of incorporating these tribes if another war should break out."
+  GLF_expand_our_confederation_desc:0 "There are many tribes still living in Canada and the United States. We should entertain the possibility of expanding our Confederation to include the possibility of incorporating these tribes if another war should break out."
   
   GLF_call_the_warchiefs:0 "Call the Warchiefs"
   GLF_call_the_warchiefs_desc:0 "The Confederation and Canada have been at odds for a while. To prepare for war we must call the Warchiefs. With all the tribes together we can lay out a strategic plan."
@@ -147,7 +147,7 @@
   GLF_seize_foreign_assets:0 "Seize Foreign Assets"
   GLF_seize_foreign_assets_desc:0 "After we have closed our borders there are still some foreign commerce operating inside our lands. If we seize these assets we will send a message that we are a sovereign nation and our borders are to be respected."
   
-  GLF_our_strong_boarders:0 "Our Strong Boarders"
+  GLF_our_strong_boarders:0 "Our Strong Borders"
   GLF_our_strong_boarders_desc:0 "The tribes of the Confederation have seen time and time again that forgin powers will try to find a way to gain profit from our lands. We will continue to strengthen our borders and prevent further violations."
 
   GLF_ideas_from_the_south:0 "Ideas from the south"
@@ -191,7 +191,7 @@
   GLF_support_our_soldiers_desc:0 "The bravest and greatest members of our Confederation will always be our soldiers. It is time we gave back to these men and women who keep us safe. By supporting our soldiers we will have a stronger fighting force."
   
   GLF_free_nixkamich_tree:0 "Free Nixkamich"
-  GLF_free_nixkamich__tree_desc:0 "Our high command has discovered the location of the prison that chief Nixkamich is being kept in. They have proposed Operation Dark Feather, an operation that will free Nixkamich. The operation will involve dozens of special forces operatives crossing the Candadian border and infiltrating the prison. Nixkamich should not have been taken by the Canadians and once he is back in our lands he can answer for what he has done."
+  GLF_free_nixkamich_tree_desc:0 "Our high command has discovered the location of the prison that chief Nixkamich is being kept in. They have proposed Operation Dark Feather, an operation that will free Nixkamich. The operation will involve dozens of special forces operatives crossing our border and infiltrating the prison."
   
   GLF_no_crime_done:0 "No Crime Done"
   GLF_no_crime_done_desc:0 "Nixkamich is not a criminal. Is it a crime to try to take back what belongs to you? Perhaps by the laws of the colonisers he is an aggressor but their laws have no power here and if they want to give him a trial they should come and try to take him."

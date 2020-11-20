@@ -15,13 +15,13 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.1.4
+		date > 1936.1.9
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 20
+		days = 5
 	}
 
 	option = { # unity
@@ -42,7 +42,7 @@ country_event = {
 	id = glf.29
 	title = glf.29.title
 	desc = glf.29.d
-	picture = GFX_report_event_generic_sign_treaty2
+	picture = GFX_report_event_britan_accepts_GLF
 
 	is_triggered_only = yes
 
@@ -56,7 +56,7 @@ country_event = {
 	id = glf.30
 	title = glf.30.title
 	desc = glf.30.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_britan_accepts_GLF
 
 	is_triggered_only	= yes
 
@@ -157,7 +157,7 @@ country_event = {
 	id = glf.5
 	title = glf.5.t
 	desc = glf.5.d
-	picture = GFX_report_event_generic_sign_treaty3
+	picture = GFX_report_event_usa_agrees_maine
 
 	is_triggered_only = yes
 
@@ -177,7 +177,7 @@ country_event = {
 	id = glf.6
 	title = glf.6.t
 	desc = glf.6.d
-	picture = GFX_report_event_poland_rejects
+	picture = GFX_report_event_usa_agrees_maine
 
 	is_triggered_only = yes
 
@@ -193,7 +193,7 @@ country_event = {
 	id = glf.7
 	title = glf.7.title
 	desc = glf.7.d
-	picture = GFX_report_event_generic_sign_treaty2
+	picture = GFX_report_event_russia_accepts_GLF
 
 	is_triggered_only = yes
 
@@ -207,7 +207,7 @@ country_event = {
 	id = glf.8
 	title = glf.8.title
 	desc = glf.8.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_russia_accepts_GLF
 
 	is_triggered_only	= yes
 
@@ -222,7 +222,7 @@ country_event = {
 	id = glf.9
 	title = glf.9.title
 	desc = glf.9.d
-	picture = GFX_report_event_generic_sign_treaty2
+	picture = GFX_report_event_germany_accepts_GLF
 
 	is_triggered_only = yes
 
@@ -236,7 +236,7 @@ country_event = {
 	id = glf.10
 	title = glf.10.title
 	desc = glf.10.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_germany_accepts_GLF
 
 	is_triggered_only	= yes
 
@@ -251,7 +251,7 @@ country_event = {
 	id = glf.77
 	title = glf.77.t
 	desc = glf.77.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_usa_accepts_GLF
 
 	is_triggered_only = yes
 
@@ -269,7 +269,7 @@ country_event = {
 					value = 200
 				}
 			}
-			country_event = { id = glf.11 days = 1 }
+			country_event = { id = glf.11}
 		}
 	}
 
@@ -297,7 +297,7 @@ country_event = {
 	id = glf.11
 	title = glf.11.t
 	desc = glf.11.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_usa_accepts_GLF
 	
 	is_triggered_only = yes
 
@@ -311,7 +311,7 @@ country_event = {
 	id = glf.12
 	title = glf.12.t
 	desc = glf.12.d
-	picture = GFX_report_event_polish_tanks_01
+	picture = GFX_report_event_usa_accepts_GLF
 	
 	is_triggered_only = yes
 
@@ -396,6 +396,7 @@ country_event = {
 		name = glf.15.a
 		GLF = {
 			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
 			remove_ideas = GLF_free_nixkamich
 			add_ideas = GLF_convicted_nixkamich
 		}
@@ -404,6 +405,7 @@ country_event = {
 		name = glf.15.b
 		GLF = {
 			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
 			remove_ideas = GLF_free_nixkamich
 			add_ideas = GLF_executed_nixkamich
 		}
@@ -412,6 +414,8 @@ country_event = {
 		name = glf.15.c
 		GLF = {
 			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
+			add_ideas = GLF_pardoned_nixkamich
 		}
 	}
 }
@@ -428,19 +432,17 @@ country_event = {
 	option = {#convicted
 		name = glf.16.a
 		GLF = {
-			swap_ideas {
-				remove_idea = resurgence_of_hawkism
-				add_idea = GLF_convicted_nixkamich
-			}			
+			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
+			add_ideas = GLF_convicted_nixkamich		
 		}
 	}
 	option = {#pardoned
 		name = glf.16.b
 		GLF = {
-			swap_ideas {
-				remove_idea = resurgence_of_hawkism
-				add_idea = GLF_pardoned_nixkamich
-			}			
+			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
+			add_ideas = GLF_pardoned_nixkamich		
 		}
 	}
 }
@@ -457,20 +459,18 @@ country_event = {
 	option = {#convicted
 		name = glf.17.a
 		GLF = {
-			swap_ideas {
-				remove_idea = resurgence_of_hawkism
-				remove_idea = GLF_martyred_nixkamich
-				add_idea = GLF_convicted_nixkamich
-			}			
+			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
+			remove_ideas = GLF_martyred_nixkamich
+			add_ideas = GLF_convicted_nixkamich		
 		}
 	}
 	option = {#pardoned
 		name = glf.17.b
 		GLF = {
-			swap_ideas {
-				remove_idea = resurgence_of_hawkism
-				add_idea = GLF_pardoned_nixkamich
-			}			
+			remove_ideas = resurgence_of_hawkism
+			remove_ideas = resurgence_of_hawkism2
+			add_ideas = GLF_pardoned_nixkamich		
 		}
 	}
 }
@@ -480,17 +480,16 @@ country_event = {
 	id = glf.99
 	title = glf.18.title
 	desc = glf.18.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_canda_campers_lost
 
 	#is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
 		country_exists = CAN
-		date > 1936.2.2
+		date > 1936.4.2
 		GLF = {
 			NOT { has_war_with = CAN}
-			fascism > 0.1
 		}
 	}
 
@@ -504,6 +503,7 @@ country_event = {
 		name = glf.18.a
 		ai_chance = { factor = 80 }
 		add_political_power = -10
+		country_event = { id = glf.93 days = 10 }
 
 	}
 	option = { # allow canada to help
@@ -512,7 +512,7 @@ country_event = {
 		add_political_power = -20
 		add_opinion_modifier = { target = CAN modifier = GLF_manitoba_help }
 		CAN = { add_opinion_modifier = { target = ROOT modifier = GLF_manitoba_help } }
-		
+		country_event = { id = glf.93 days = 10 }
 	}
 	option = { # don't bother
 		name = glf.18.c
@@ -527,24 +527,16 @@ country_event = {
 	id = glf.93
 	title = glf.93.title
 	desc = glf.93.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_canda_campers_found
 
-	#is_triggered_only = yes
-
-	trigger = {
-		original_tag  = GLF
-	}
-
-	mean_time_to_happen = {
-		days = 14
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = { # great news 
 		name = glf.93.a
 		ai_chance = { factor = 80 }
-		
+		country_event = { id = glf.92 days = 1700 }
 	}
 }
 
@@ -553,17 +545,9 @@ country_event = {
 	id = glf.92
 	title = glf.92.title
 	desc = glf.92.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_boy_found
 
-	#is_triggered_only = yes
-
-	trigger = {
-		original_tag  = GLF
-	}
-
-	mean_time_to_happen = {
-		days = 700
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -598,12 +582,14 @@ country_event = {
 	id = glf.95
 	title = glf.95.title
 	desc = glf.95.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_news_event_lakes_fair
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
+		country_exists = CAN
+		date > 1937.3.2
 	}
 
 	fire_only_once = yes
@@ -636,13 +622,13 @@ country_event = {
 	id = glf.19
 	title = glf.19.title
 	desc = glf.19.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_detroit_auto
 
 	#is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.1.2
+		date > 1938.1.2
 		GLF = {
 			owns_state = 393
 		}
@@ -668,13 +654,13 @@ country_event = {
 	id = glf.20
 	title = glf.20.title
 	desc = glf.20.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_ship_race
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.2.2
+		date > 1938.7.2
 	}
 
 	fire_only_once = yes
@@ -697,13 +683,13 @@ country_event = {
 	id = glf.21
 	title = glf.21.title
 	desc = glf.21.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_relocate_usa
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.2.2
+		date > 1939.2.2
 		
 		country_exists = USA
 		GLF = {
@@ -732,13 +718,13 @@ country_event = {
 	id = glf.94
 	title = glf.94.title
 	desc = glf.94.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_relocate_canada
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.2.2
+		date > 1937.3.2
 		
 		country_exists = USA
 		GLF = {
@@ -767,13 +753,13 @@ country_event = {
 	id = glf.22
 	title = glf.22.title
 	desc = glf.22.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_hawkist_canada
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.5.2
+		date > 1937.5.2
 		
 		country_exists = CAN
 		GLF = {
@@ -805,13 +791,13 @@ country_event = {
 	id = glf.23
 	title = glf.23.title
 	desc = glf.23.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_hawkist_usa
 
 	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.5.2
+		date > 1938.2.2
 		
 		country_exists = CAN
 		GLF = {
@@ -844,13 +830,13 @@ country_event = {
 	id = glf.24
 	title = glf.24.title
 	desc = glf.24.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_sturgion_sinking
 
 	is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.5.2
+		date > 1938.5.2
 		
 		CAN = {
 			owns_state = 468
@@ -885,7 +871,7 @@ country_event = {
 	id = glf.25
 	title = glf.25.title
 	desc = glf.25.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_spain_send
 
 	#is_triggered_only = yes
 
@@ -905,7 +891,7 @@ country_event = {
 	option = { # send them
 		name = glf.25.a
 		GLF = {
-			country_event = { id = glf.26 days = 10 }
+			country_event = { id = glf.26 days = 5 }
 		}
 		ai_chance = { factor = 20 }
 
@@ -925,25 +911,14 @@ country_event = {
 	id = glf.26
 	title = glf.26.title
 	desc = glf.26.d
-	picture = GFX_report_event_great_lakes_confederation
-
-	#is_triggered_only = yes
-
-	#trigger = {
-	#	original_tag  = GLF
-	#}
+	picture = GFX_report_event_spain_arrive
 
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 15
-	}
 
 	option = {
 		name = glf.26.a
 		set_country_flag = GLF_observers_spain
 		ai_chance = { factor = 20 }
-
 	}
 }
 
@@ -952,7 +927,7 @@ country_event = {
 	id = glf.27
 	title = glf.27.title
 	desc = glf.27.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_ethiopia_arrive
 
 	#is_triggered_only = yes
 
@@ -983,7 +958,7 @@ country_event = {
 	id = glf.28
 	title = glf.28.title
 	desc = glf.28.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_ethiopia_return
 
 	trigger = {
 		original_tag  = GLF
@@ -993,7 +968,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 25
+		days = 40
 	}
 
 	fire_only_once = yes
@@ -1010,9 +985,9 @@ country_event = {
 	id = glf.98
 	title = glf.98.title
 	desc = glf.98.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_great_lakes_airshow
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	#trigger = {
 	#	original_tag  = GLF
@@ -1023,7 +998,7 @@ country_event = {
 
 	option = {
 		name = glf.98.a
-		air_experience = 150
+		air_experience = 250
 	}
 }
 
@@ -1032,13 +1007,13 @@ country_event = {
 	id = glf.97
 	title = glf.97.title
 	desc = glf.97.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_honovi
 
 	#is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.2.5
+		date > 1939.2.5
 		GLF = {
 			NOT {
 				has_country_leader = {
@@ -1069,45 +1044,45 @@ country_event = {
 }
 
 # GLF greatest US Naturalization act
-country_event = {
-	id = glf.31
-	title = glf.31.title
-	desc = glf.31.d
-	picture = GFX_report_event_great_lakes_confederation
-
-	#is_triggered_only = yes
-
-	trigger = {
-		original_tag  = GLF
-		date > 1940.10.7
-		country_exists = USA
-	}
-	
-	mean_time_to_happen = {days = 7}
-
-	fire_only_once = yes
-
-	option = { # reach out to US news
-		name = glf.31.a
-	}
-	
-	option = { # ignore the event
-		name = glf.31.b
-	}
-}
+#country_event = {
+#	id = glf.31
+#	title = glf.31.title
+#	desc = glf.31.d
+#	picture = GFX_report_event_great_lakes_confederation
+#
+#	#is_triggered_only = yes
+#
+#	trigger = {
+#		original_tag  = GLF
+#		date > 1940.10.7
+#		country_exists = USA
+#	}
+#	
+#	mean_time_to_happen = {days = 7}
+#
+#	fire_only_once = yes
+#
+#	option = { # reach out to US news
+#		name = glf.31.a
+#	}
+#	
+#	option = { # ignore the event
+#		name = glf.31.b
+#	}
+#}
 
 # GLF yellow dirt
 country_event = {
 	id = glf.96
 	title = glf.96.title
 	desc = glf.96.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_yellow_dirt
 
 	#is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		#country_exists = USA
+		country_exists = USA
 		USA = {
 			has_tech = atomic_research
 		}
@@ -1127,7 +1102,7 @@ country_event = {
 	id = glf.32
 	title = glf.32.title
 	desc = glf.32.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_national_american_inian
 
 	#is_triggered_only = yes
 
@@ -1151,13 +1126,13 @@ country_event = {
 	id = glf.33
 	title = glf.33.title
 	desc = glf.33.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_charles_curtis
 
 	#is_triggered_only = yes
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.1.1
+		date > 1940.1.1
 		country_exists = USA
 		GLF = {
 			NOT { has_war_with = USA}
@@ -1184,7 +1159,7 @@ country_event = {
 	id = glf.34
 	title = glf.34.title
 	desc = glf.34.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_cold_peace_start
 	
 	is_triggered_only = yes
 
@@ -1192,7 +1167,7 @@ country_event = {
 
 	option = { # They are tired of this war
 		name = glf.34.a
-		ENG = {country_event = { id = glf.35}}
+		ENG = {country_event = { id = glf.35 days = 1}}
 		
 	}
 }
@@ -1202,7 +1177,7 @@ country_event = {
 	id = glf.35
 	title = glf.35.title
 	desc = glf.35.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_cold_peace_start
 
 	is_triggered_only = yes
 
@@ -1225,7 +1200,7 @@ country_event = {
 	id = glf.36
 	title = glf.36.title
 	desc = glf.36.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_cold_peace_end
 
 	is_triggered_only = yes
 
@@ -1269,7 +1244,7 @@ country_event = {
 	id = glf.37
 	title = glf.37.title
 	desc = glf.37.d
-	picture = GFX_report_event_great_lakes_confederation
+	picture = GFX_report_event_cold_peace_end
 
 	is_triggered_only = yes
 
@@ -1277,5 +1252,73 @@ country_event = {
 
 	option = { # this war may never end
 		name = glf.37.a
+	}
+}
+
+#free nix no canada
+country_event = {
+	id = glf.100
+	title = glf.100.t
+	desc = glf.100.d
+	picture = GFX_report_event_operation_dark_feather
+	
+	is_triggered_only = yes
+
+	option = {
+		name = glf.100.a
+		GLF = {
+			#fixed_random_seed = no
+			random_list = {
+				80 = {
+					country_event = { id = glf.14 days = 1 }
+				}
+				20 = {
+					country_event = { id = glf.66 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+#free nix no canada no England
+country_event = {
+	id = glf.101
+	title = glf.101.t
+	desc = glf.101.d
+	picture = GFX_report_event_operation_dark_feather
+	
+	trigger = {
+		original_tag  = GLF
+		NOT{country_exists = ENG}
+		NOT{country_exists = CAN}
+		GLF = {NOT={has_completed_focus = GLF_free_nixkamich_tree}
+			   NOT={has_idea = GLF_convicted_nixkamich}}
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.101.a
+		add_ideas = GLF_free_nixkamich
+	}
+}
+
+#free nix no canada no England sentenced
+country_event = {
+	id = glf.102
+	title = glf.102.t
+	desc = glf.102.d
+	picture = GFX_report_event_operation_dark_feather
+	
+	trigger = {
+		original_tag  = GLF
+		NOT{country_exists = ENG}
+		NOT{country_exists = CAN}
+		GLF = {NOT={has_completed_focus = GLF_free_nixkamich_tree}
+			has_idea = GLF_convicted_nixkamich}
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.102.a
 	}
 }

@@ -16,11 +16,11 @@
  glf.13.a:0 "Be as silent as the midnight woods"
  
  glf.14.t:0 "Operation Success"
- glf.14.d:0 "Nixkhamich is free! In the dead of night our brave warriors surprised the prison guards and located where Nixkhamich was being held. Before word got out that he was free his ace pilot daughter Honovi flew him by sea plane through Canadian territory and back home to the Great Lakes. We have yet to hear from Canadian officials but they will no doubt be furious."
+ glf.14.d:0 "Nixkhamich is free! In the dead of night our brave warriors surprised the prison guards and located where Nixkhamich was being held. Before word got out that he was free his ace pilot daughter Honovi flew him by sea plane back home to the Great Lakes. We have yet to hear from those who captured him but they will no doubt be furious."
  glf.14.a:0 "Our warriors are truly great!"
  
  glf.66.t:0 "Operation Failed"
- glf.66.d:0 "Nixkhamich has died! The operation was a failure. Everything seemed to be going according the plan, the prison guards were surprised, Nixkhamich was freed, but then a Canadian garrison intercepted our forces and during the ensuing firefight Nixkhamich was shot. Our forces retreated with his body. Tribes across the Confederation are silent today as they mourn for this controversial yet strong figure."
+ glf.66.d:0 "Nixkhamich has died! The operation was a failure. Everything seemed to be going according to the plan, the prison guards were surprised, Nixkhamich was freed, but then a local garrison intercepted our forces and during the ensuing firefight Nixkhamich was shot. Our forces retreated with his body. Tribes across the Confederation are silent today as they mourn for this controversial yet strong figure."
  glf.66.a:0 "This is a sad day"
  
  glf.15.t:0 "Trial of the free Nixkamich"
@@ -113,7 +113,7 @@
  glf.10.d:0 "Germany has refused to allow us to join the Axis. We will have to go alone."
  glf.10.a:0 "We do not need them, we will just fight harder"
  
- glf.77.t:0 "[From.GetName] Joins the [Root.GetFactionName]!"
+ glf.77.t:0 "The Lakers ask for an Alliance"
  glf.77.d:0 "Acknowledging the need for unity against the threats surrounding our countries on every side, [From.GetLeader] today announced to the world that [From.GetName] has entered a treaty with [Root.GetName] for the sake of our mutual safety."
  glf.77.a:0 "[Root.GetName] and [From.GetName] today stands as brothers."
  
@@ -128,7 +128,7 @@
  glf.93.a:0 "At least now we know their fates"
  
  glf.92.title:0 "Lost Canadian boy turned man of the tribes"
- glf.92.d:0 "Commander Ahanu of the Minnesota Chippewa band came forward today with a surprise. In a private meeting with the Chief of the Confederation, Ahanu brought with him a familiar face, a Canadian boy who was lost years ago. Jacques Dextrax was wearing traditional Chippewa war garbs and looked almost like a Chippewa himself. Ahanu admitted that he was leading a small fishing party through the boundary waters many years ago and they were fired on by Canadian trespassers. Several members of his party were shot and they returned fire killing all the Candians except for Jacques who now goes by Maple-Fox. Jacques was captured and taken to a secluded village, for the past few years he has lived among the Chippewa and learned the ways of the tribes. Maple-Fox has become a hardworking member of the Confederation and his few months of military training in Canada before he was captured have given him knowledge of Canadian tactics. Ahanu says that Maple-Fox is ready to command some forces of his own. If he is allowed to join our forces Maple-Fox may be a great asset to us, but this will anger the Candians."
+ glf.92.d:0 "Commander Ahanu of the Minnesota Chippewa band came forward today with a surprise. In a private meeting with the Chief of the Confederation, Ahanu brought with him a familiar face, a Canadian boy who was lost years ago. Jacques Dextrax was wearing traditional Chippewa war garbs and looked almost like a Chippewa himself. Ahanu admitted that he was leading a small fishing party through the boundary waters many years ago and they were fired on by Canadian trespassers. Several members of his party were shot and they returned fire killing all the Candians except for Jacques who now goes by Maple-Fox. Jacques was captured and taken to a secluded village, for the past few years he has lived among the Chippewa and learned the ways of the tribes. Maple-Fox has become a hardworking member of the Confederation and he attended millitary training in Canada before he was captured. Ahanu says that Maple-Fox is ready to command some forces of his own. If he is allowed to join our forces Maple-Fox may be a great asset to us."
  glf.92.a:0 "He is a Laker now and if he wants to fight he can"
  glf.92.b:0 "This boy was a hostage and he should be returned even if he does not want to go"
  
@@ -182,7 +182,7 @@
  glf.26.a:0 "If this is a new type of war we will see it"
  
  glf.27.title:0 "Akecheta arrives in Ethiopia"
- glf.27.d:0 "The great explorer Akecheta is an expert sailor he is known worldwide for his long voyages in his small ship he made by himself. Akecheta has always gone wherever he wants to go and he often disappears for months. He occasionally sends information about the places he goes to Confederation officials but he is by no means a reliable source. Akecheta has head word of the war in Ethiopia and he wishes to see it first hand."
+ glf.27.d:0 "The great explorer Akecheta is an expert sailor he is known worldwide for his long voyages in his small ship he made by himself. Akecheta has always gone wherever he wants to go and he often disappears for months. He occasionally sends information about the places he goes to Confederation officials but he is by no means a reliable source. Akecheta has heard word of the war in Ethiopia and he wishes to see it first hand."
  glf.27.a:0 "This great voyager will watch as Italy fights Ethiopia"
  
  glf.28.title:0 "Akecheta returns from Ethiopia"
@@ -232,10 +232,21 @@
  glf.37.d:0 "It seems that the Allies want the bloodshed to continue. They have no hope of retaking these lands so they have made a grave error."
  glf.37.a:0 "This was will never end"
  
+ glf.11.t:0 "The United States Agrees"
+ glf.11.d:0 "The President of the United States has agreed to join our faction. The two titans of the New World are now united from sea to shining sea."
+ glf.11.a:0 "The New World is strong"
  
+ glf.100.t:0 "Operation Dark Feather"
+ glf.100.d:0 "Before Canada was defeated chief Nixkhamich was handed over to the English. The operation to free the former chief of the Confederation is ready. Operatives friendly to us living in English territory have sheltered our most elite soldiers, these brave warriors will face insurmountable odds assaulting the prison and escaping with the dark chief. For weeks of planning military strategists have debated the best way to get the chief back across the border, they have decided that while it may be risky a seaplane will be stationed nearby and if Nixkhamich is freed from his prison he will be airlifted back to our borders. If this mission fails we will likely never get a second chance."
+ glf.100.a:0 "Be as silent as the midnight woods"
  
+ glf.101.t:0 "Nixkamich is finally free"
+ glf.101.d:0 "With the defeat of both the Canadians and the English Nixkhamich can finally return to the Confederation. Now that the Dark chief has returned he is now free to visit and speak to his followers."
+ glf.101.a:0 "He has been through much"
  
- 
+ glf.102.t:0 "Nixkamich is transfered to us"
+ glf.102.d:0 "With the defeat of both the Canadians and the English Nixkhamich can finally return to the Confederation. Because of the Confederations decision to sentence him he will now be our prisoner."
+ glf.102.a:0 "He belongs at home"
  
  
  
