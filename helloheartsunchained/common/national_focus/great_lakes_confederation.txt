@@ -358,6 +358,7 @@
 				set_state_category = large_city
 				add_manpower = 2000000
 			}
+			add_state_core = 808
 		}
 	}
 
@@ -1791,7 +1792,7 @@
 		y = 1
 		relative_position_id = GLF_end_the_gentle_side
 
-		cost = 10
+		cost = 15
 		prerequisite = { focus = GLF_end_the_gentle_side}
 
 		cancel_if_invalid = yes

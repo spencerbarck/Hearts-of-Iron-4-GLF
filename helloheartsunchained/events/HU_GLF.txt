@@ -15,7 +15,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1936.1.9
+		date > 1936.1.5
 	}
 
 	fire_only_once = yes
@@ -584,12 +584,13 @@ country_event = {
 	desc = glf.95.d
 	picture = GFX_news_event_lakes_fair
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
-		country_exists = CAN
 		date > 1937.3.2
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -656,11 +657,13 @@ country_event = {
 	desc = glf.20.d
 	picture = GFX_report_event_ship_race
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1938.7.2
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -685,8 +688,6 @@ country_event = {
 	desc = glf.21.d
 	picture = GFX_report_event_relocate_usa
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1939.2.2
@@ -695,6 +696,10 @@ country_event = {
 		GLF = {
 			NOT { has_war_with = USA}
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -720,8 +725,6 @@ country_event = {
 	desc = glf.94.d
 	picture = GFX_report_event_relocate_canada
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1937.3.2
@@ -730,6 +733,10 @@ country_event = {
 		GLF = {
 			NOT { has_war_with = USA}
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -755,8 +762,6 @@ country_event = {
 	desc = glf.22.d
 	picture = GFX_report_event_hawkist_canada
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1937.5.2
@@ -766,6 +771,10 @@ country_event = {
 			NOT { has_war_with = CAN}
 			fascism > 0.15
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -793,8 +802,6 @@ country_event = {
 	desc = glf.23.d
 	picture = GFX_report_event_hawkist_usa
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1938.2.2
@@ -804,6 +811,10 @@ country_event = {
 			NOT { has_war_with = CAN}
 			fascism > 0.15
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -832,8 +843,6 @@ country_event = {
 	desc = glf.24.d
 	picture = GFX_report_event_sturgion_sinking
 
-	is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		date > 1938.5.2
@@ -846,6 +855,10 @@ country_event = {
 		GLF = {
 			NOT { has_war_with = CAN}
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
 	}
 
 	fire_only_once = yes
@@ -873,8 +886,6 @@ country_event = {
 	desc = glf.25.d
 	picture = GFX_report_event_spain_send
 
-	#is_triggered_only = yes
-
 	trigger = {
 		original_tag  = GLF
 		SPR = {
@@ -891,15 +902,12 @@ country_event = {
 	option = { # send them
 		name = glf.25.a
 		GLF = {
-			country_event = { id = glf.26 days = 5 }
+			country_event = { id = glf.26 days = 10}
 		}
-		ai_chance = { factor = 20 }
-
 	}
 	
 	option = { # avoid the conflict
 		name = glf.25.b
-		ai_chance = { factor = 80 }
 
 	}
 }
@@ -912,9 +920,7 @@ country_event = {
 	title = glf.26.title
 	desc = glf.26.d
 	picture = GFX_report_event_spain_arrive
-
-	fire_only_once = yes
-
+	
 	option = {
 		name = glf.26.a
 		set_country_flag = GLF_observers_spain
@@ -976,6 +982,16 @@ country_event = {
 	option = { # send them
 		name = glf.28.a
 		clr_country_flag = GLF_observers_ethiopia
+		create_navy_leader = {
+			name = "Akecheta"
+			picture = "Portrait_GLF_Admiral_Akecheta.dds"
+			traits = { superior_tactician gentlemanly blockade_runner}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
 
 	}
 }

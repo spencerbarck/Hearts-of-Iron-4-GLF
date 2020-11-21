@@ -89,6 +89,30 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
+create_field_marshal = {
+	name = "Hento"
+	picture = "Portrait_GLF_Field_Marshall.dds"
+	traits = {  defensive_doctrine  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Pa-Akanti"
+	picture = "Portrait_GLF_Field_Marshall2.dds"
+	traits = {  brilliant_strategist   }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
 create_corps_commander = {#male
 	name = "Rowtag"
 	picture = "Portrait_GLF_General_white.dds"
@@ -220,7 +244,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Checker"
+	name = "Checker Tomkins"
 	desc = ""
 	picture = "greatlakesconfederationleaderfasc3.dds"
 	ideology = fascism_ideology
