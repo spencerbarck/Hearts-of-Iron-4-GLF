@@ -842,6 +842,8 @@
 				ideology = democratic
 				popularity = 0.05
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GLF_demo
 		}
 	}
 
@@ -1084,6 +1086,8 @@
 				idea = communist_influence
 				days = 720
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GLF_comm
 			#Increases Communist Support
 		}
 	}
@@ -2721,7 +2725,7 @@
 		y = 1
 		relative_position_id = GLF_examine_foreign_tactics
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_swift_like_the_tide focus = GLF_examine_foreign_tactics focus = GLF_fight_shell_for_shell}
 
 		cancel_if_invalid = yes
@@ -2743,7 +2747,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2762,7 +2766,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2781,7 +2785,7 @@
 		y = 1
 		relative_position_id = GLF_bgwajinini
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_bgwajinini}
 
 		cancel_if_invalid = yes
@@ -2854,8 +2858,8 @@
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 2.0
-				uses = 2
+				bonus = 3.0
+				uses = 1
 				category = cas_bomber
 			}
 		}

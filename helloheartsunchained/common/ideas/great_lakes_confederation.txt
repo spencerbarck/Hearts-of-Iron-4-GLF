@@ -939,7 +939,9 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				army_core_defence_factor = 0.5
+				army_core_defence_factor = 0.4
+				production_speed_bunker_factor = 0.4
+				production_speed_coastal_bunker_factor = 0.4
 			}
 		}
 	}
@@ -973,6 +975,10 @@ ideas = {
 			}
 
 			picture = advisor_comm
+			
+			available = {
+				has_completed_focus = GLF_community_of_tribes
+			}
 
 			traits = { communist_revolutionary }
 
@@ -988,6 +994,10 @@ ideas = {
 			}
 
 			picture = advisor_demo
+			
+			available = {
+				has_completed_focus = GLF_ideas_from_the_south
+			}
 
 			traits = { democratic_reformer }
 
