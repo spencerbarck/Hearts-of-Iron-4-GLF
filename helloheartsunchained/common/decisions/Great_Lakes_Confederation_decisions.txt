@@ -819,7 +819,6 @@ GLF_the_cold_peace_decisions = {
 			has_country_flag = ask_for_canada
         }	
 		available = {
-			always = no
 			OR{
 				NOT {CAN ={has_capitulated = yes}}
 				NOT {controls_state = 468}
@@ -839,6 +838,170 @@ GLF_the_cold_peace_decisions = {
 			clr_country_flag = ask_for_canada
 			
 			GLF = { country_event = { id = glf.34} }
+		}
+		
+		complete_effect = {
+			set_country_flag = canada_fail1
+        }
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GLF_the_cold_peace_deal_start2 = {
+		icon = GFX_decision_eng_trade_unions_support
+		is_good = yes
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_country_flag = canada_fail1
+			NOT{has_country_flag = ask_for_canada2}
+		}
+		available = {
+			NOT{
+				NOT {CAN {has_capitulated = yes}}
+				NOT {controls_state = 468}
+				NOT {controls_state = 809}
+				NOT {controls_state = 467}
+				NOT {controls_state = 469}
+				NOT {controls_state = 470}
+				NOT {controls_state = 465}
+				NOT {controls_state = 464}
+				NOT {controls_state = 473}
+				NOT {has_army_manpower = { size > 299999 }}
+			}
+		}
+		complete_effect = {
+			set_country_flag = ask_for_canada2
+		}
+		
+		cost = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	GLF_the_cold_peace_deal2 = {
+		icon = GFX_decision_eng_ally_imperialist_coup
+		fire_only_once = no
+		is_good = yes
+		
+		visible = {
+			has_country_flag = ask_for_canada2
+			NOT{has_country_flag = GLF_cold_peace_done}
+		}
+		
+		activation = {	
+			has_country_flag = ask_for_canada2
+        }	
+		available = {
+			OR{
+				NOT {CAN ={has_capitulated = yes}}
+				NOT {controls_state = 468}
+				NOT {controls_state = 809}
+				NOT {controls_state = 467}
+				NOT {controls_state = 469}
+				NOT {controls_state = 470}
+				NOT {controls_state = 465}
+				NOT {controls_state = 464}
+				NOT {controls_state = 473}
+				NOT {has_army_manpower = { size > 299999 }}
+			}
+		}
+		days_mission_timeout = 30
+		timeout_effect = {  
+			set_country_flag = GLF_cold_peace_done
+			clr_country_flag = ask_for_canada2
+			
+			GLF = { country_event = { id = glf.34} }
+		}
+		
+		complete_effect = {
+			set_country_flag = canada_fail2
+        }
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GLF_the_cold_peace_deal_start3 = {
+		icon = GFX_decision_eng_trade_unions_support
+		is_good = yes
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_country_flag = canada_fail2
+			NOT{has_country_flag = ask_for_canada3}
+		}
+		available = {
+			NOT{
+				NOT {CAN {has_capitulated = yes}}
+				NOT {controls_state = 468}
+				NOT {controls_state = 809}
+				NOT {controls_state = 467}
+				NOT {controls_state = 469}
+				NOT {controls_state = 470}
+				NOT {controls_state = 465}
+				NOT {controls_state = 464}
+				NOT {controls_state = 473}
+				NOT {has_army_manpower = { size > 299999 }}
+			}
+		}
+		complete_effect = {
+			set_country_flag = ask_for_canada3
+		}
+		
+		cost = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	GLF_the_cold_peace_deal3 = {
+		icon = GFX_decision_eng_ally_imperialist_coup
+		fire_only_once = no
+		is_good = yes
+		
+		visible = {
+			has_country_flag = ask_for_canada3
+			NOT{has_country_flag = GLF_cold_peace_done}
+		}
+		
+		activation = {	
+			has_country_flag = ask_for_canada3
+        }	
+		available = {
+			OR{
+				NOT {CAN ={has_capitulated = yes}}
+				NOT {controls_state = 468}
+				NOT {controls_state = 809}
+				NOT {controls_state = 467}
+				NOT {controls_state = 469}
+				NOT {controls_state = 470}
+				NOT {controls_state = 465}
+				NOT {controls_state = 464}
+				NOT {controls_state = 473}
+				NOT {has_army_manpower = { size > 299999 }}
+			}
+		}
+		days_mission_timeout = 30
+		timeout_effect = {  
+			set_country_flag = GLF_cold_peace_done
+			clr_country_flag = ask_for_canada3
+			
+			GLF = { country_event = { id = glf.34} }
+		}
+		
+		complete_effect = {
+			set_country_flag = GLF_cold_peace_done
 		}
 		
 		ai_will_do = {

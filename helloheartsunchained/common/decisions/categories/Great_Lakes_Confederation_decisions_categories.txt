@@ -73,7 +73,7 @@ GLF_the_cold_peace_decisions = {
 	visible = {
 		always = yes
 		NOT { has_country_flag = GLF_cold_peace_done }
-		has_completed_focus = GLF_the_cold_peace
+		#has_completed_focus = GLF_the_cold_peace
 	}
 	
 	visible_when_empty = yes

@@ -43,6 +43,10 @@
  GLF_the_cold_peace_decisions_desc:0 "Canada was unprepared for our forces. They thought that the British could protect them but we have made great advances into Canada and have made contact with several tribes that are now free from the grip of England. As we become more and more successful the British and commonwealth forces protecting Canada grow weary of this war as do the citizens of the British isles. If we are able to show enough strength the Allies will decide that this war is not worth the cost for them any more and will choose to recognize our Confederation as the rightful citizens of this land."
  GLF_the_cold_peace_deal_start1:0 "Begin Peace Talks"
  GLF_the_cold_peace_deal1:0 "Queen Charlotte Islands Conference"
+ GLF_the_cold_peace_deal_start2:0 "Renew Peace Talks (2/3)"
+ GLF_the_cold_peace_deal2:0 "Queen Charlotte Islands Conference (2/3)"
+ GLF_the_cold_peace_deal_start3:0 "Last Chance for Peace (3/3)"
+ GLF_the_cold_peace_deal3:0 "Queen Charlotte Islands Conference (3/3)"
  
  
  GLF_spanish_civil_war_decisions:0 "Observe the Spanish Civil War"
