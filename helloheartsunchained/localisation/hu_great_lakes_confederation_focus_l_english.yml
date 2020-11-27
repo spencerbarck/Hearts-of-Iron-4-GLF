@@ -214,6 +214,12 @@
   GLF_the_hawk_versus_the_eagle:0 "The Hawk versus the Eagle"
   GLF_the_hawk_versus_the_eagle_desc:0 "Our people fought the people of the British colonies before they were even independent. Our rivalry will continue for they have prospered on the land that rightfully belongs to us. We will take back the land and show the United States that we are not to be disrespected."
 
+  GLF_support_our_workers:0 "Support our Workers"
+  GLF_support_our_workers_desc:0 "The industrialization of the Confederation has propelled our society into the modern age. If we wish to continue to be great our industry must keep up with the rest of the world. We should create more factory jobs to help expand our growing military output."
+  
+  GLF_support_our_worshipers:0 "Support our Worshipers"
+  GLF_support_our_worshipers_desc:0 "The gentle side is not just forgin policy, it states that every tribe within the Confederation has freedom to practice what they want. By supporting more places of worship throughout the Confederation we can further unite our people."
+
 #End internal politics section
 
 #Industrial section
@@ -348,5 +354,8 @@
  
  GLF_great_lakes_airshow:0 "Great Lakes Airshow"
  GLF_great_lakes_airshow_desc:0 "It is important that we celebrate our great achievements in aviation and our great highly skilled pilots. The Great Lakes air show will be a place to witness the excellence of the tribes and the Confederation."
+ 
+ GLF_code_talkers:0 "Code Talkers"
+ GLF_code_talkers_desc:0 "The people living in the Confederation speak dozens of different languages some of which belong to drastically different language groups. If our sensitive military information is encrypted using lesser known languages our enemies will have a very hard time decrypting it."
  
 # End Army/airforce section

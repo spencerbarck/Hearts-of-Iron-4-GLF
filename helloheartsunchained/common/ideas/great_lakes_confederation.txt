@@ -403,6 +403,26 @@ ideas = {
 			}
 		}
 		
+		GLF_support_our_workers_focus = {
+
+			allowed = {
+				original_tag = GLF
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
 		GLF_end_hawkism_focus = {
 
 			allowed = {
@@ -1032,6 +1052,10 @@ ideas = {
 			allowed = {
 				original_tag = GLF
 			}
+			
+			available = {
+				has_completed_focus = GLF_tribes_in_the_20th_century
+			}
 
 			traits = { silent_workhorse }
 		}
@@ -1045,6 +1069,32 @@ ideas = {
 			}
 
 			traits = { technocrat }
+		}
+		
+		GLF_fe = {
+
+			picture = advisor_GLF_fe
+
+			allowed = {
+				original_tag = GLF
+			}
+			
+			available = {
+				has_completed_focus = GLF_end_the_gentle_side
+			}
+
+			traits = { financial_expert }
+		}
+		
+		GLF_econ = {
+
+			picture = advisor_GLF_econ
+
+			allowed = {
+				original_tag = GLF
+			}
+
+			traits = { economist }
 		}
 
 	}
@@ -1165,11 +1215,26 @@ ideas = {
 			allowed = {
 				original_tag = GLF
 			}
-			available = {
-
-			}
+			available = {}
 
 			traits = { air_chief_night_operations_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GLF_s3 = {
+			picture = advisor_GLF_s3
+
+			allowed = {
+				original_tag = GLF
+			}
+			available = {
+				has_completed_focus = GLF_great_lakes_airshow
+			}
+
+			traits = { air_chief_safety_3 }
 
 			ai_will_do = {
 				factor = 1
@@ -1235,6 +1300,22 @@ ideas = {
 			}
 		}
 		
+		GLF_rg2 = {
+			ledger = army
+			
+			picture = advisor_GLF_rg2
+			
+			allowed = {
+				original_tag = GLF
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		GLF_as1 = {
 			ledger = air
 			
@@ -1266,6 +1347,7 @@ ideas = {
 				factor = 1
 			}
 		}
+		
 	}
 
 	tank_manufacturer = {

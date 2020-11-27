@@ -166,9 +166,6 @@ country_event = {
 		USA = { transfer_state = 807 }
 		name = glf.5.a
 		transfer_state = 808
-		USA = { 
-			add_opinion_modifier = { target = GLF modifier = GLF_moose_river_for_guarantees }
-		}
 	}
 }
 
@@ -536,7 +533,9 @@ country_event = {
 	option = { # great news 
 		name = glf.93.a
 		ai_chance = { factor = 80 }
-		country_event = { id = glf.92 days = 1700 }
+		hidden_effect = {
+			country_event = { id = glf.92 days = 1700 }
+		}
 	}
 }
 
@@ -690,7 +689,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1939.2.2
+		date > 1937.5.2
 		
 		country_exists = USA
 		GLF = {
@@ -727,7 +726,7 @@ country_event = {
 
 	trigger = {
 		original_tag  = GLF
-		date > 1937.3.2
+		date > 1939.3.2
 		
 		country_exists = USA
 		GLF = {
@@ -894,7 +893,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 10
+		days = 70
 	}
 
 	fire_only_once = yes
@@ -920,6 +919,8 @@ country_event = {
 	title = glf.26.title
 	desc = glf.26.d
 	picture = GFX_report_event_spain_arrive
+	
+	is_triggered_only = yes
 	
 	option = {
 		name = glf.26.a
@@ -1303,6 +1304,8 @@ country_event = {
 	desc = glf.101.d
 	picture = GFX_report_event_operation_dark_feather
 	
+	is_triggered_only = yes
+	
 	trigger = {
 		original_tag  = GLF
 		NOT{country_exists = ENG}
@@ -1325,6 +1328,8 @@ country_event = {
 	desc = glf.102.d
 	picture = GFX_report_event_operation_dark_feather
 	
+	is_triggered_only = yes
+	
 	trigger = {
 		original_tag  = GLF
 		NOT{country_exists = ENG}
@@ -1336,5 +1341,121 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = glf.102.a
+	}
+}
+
+#bowh visits north shore
+country_event = {
+	id = glf.103
+	title = glf.103.t
+	desc = glf.103.d
+	picture = GFX_report_event_north_shore
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = GLF
+		date > 1939.10.5
+		GLF = {
+			has_country_leader = {
+				name = "Kah-ge-ga-gah-bowh"
+				ruling_only = yes
+			}
+		}
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.103.a
+		random_list = {
+				50 = {
+					country_event = { id = glf.104 days = 2 }
+				}
+				50 = {
+					country_event = { id = glf.105 days = 2 }
+				}
+			}
+	}
+}
+
+#bowh avoids assassin
+country_event = {
+	id = glf.104
+	title = glf.104.t
+	desc = glf.104.d
+	picture = GFX_report_event_north_shore
+	
+	trigger = {
+		original_tag  = GLF
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.104.a
+		add_stability = -0.05
+	}
+}
+
+#bowh assassinated
+country_event = {
+	id = glf.105
+	title = glf.105.t
+	desc = glf.105.d
+	picture = GFX_report_event_bowh_dead
+	
+	trigger = {
+		original_tag  = GLF
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.105.a
+		create_country_leader = {
+				name = "Tashunka"
+				desc = ""
+				picture = "greatlakesconfederationleader - Copy.dds"
+
+				ideology = moderatism
+				traits = {
+					exiled_plains_chief
+				}
+		}
+	}
+}
+
+#bowh dies natural causes
+country_event = {
+	id = glf.106
+	title = glf.106.t
+	desc = glf.106.d
+	picture = GFX_report_event_bowh_dead
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag  = GLF
+		date > 1943.10.5
+		GLF = {
+			has_country_leader = {
+				name = "Kah-ge-ga-gah-bowh"
+				ruling_only = yes
+			}
+		}
+	}
+
+	fire_only_once = yes
+	option = {
+		name = glf.106.a
+		create_country_leader = {
+				name = "Tashunka"
+				desc = ""
+				picture = "greatlakesconfederationleader - Copy.dds"
+
+				ideology = moderatism
+				traits = {
+					exiled_plains_chief
+				}
+		}
+		
 	}
 }

@@ -119,4 +119,24 @@ spriteTypes = {
 		name = "GFX_idea_advisor_air_theorist"
 		texturefile = "gfx/interface/advisors/advisor_air_theorist.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_GLF_rg2"
+		texturefile = "gfx/interface/advisors/advisor_GLF_rg2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_GLF_s3"
+		texturefile = "gfx/interface/advisors/advisor_GLF_s3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_GLF_fe"
+		texturefile = "gfx/interface/advisors/advisor_GLF_fe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_GLF_econ"
+		texturefile = "gfx/interface/advisors/advisor_GLF_econ.dds"
+	}
 }

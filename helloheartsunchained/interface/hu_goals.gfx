@@ -550,4 +550,19 @@ spriteTypes = {
 		name = "GFX_goal_GLF_the_detroit_revolution"
 		texturefile = "gfx/interface/goals/focus_GLF_the_detroit_revolution.dds"			
 	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_support_our_workers"
+		texturefile = "gfx/interface/goals/focus_GLF_support_our_workers.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_support_our_worshipers"
+		texturefile = "gfx/interface/goals/focus_GLF_support_our_worshipers.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GLF_code_talkers"
+		texturefile = "gfx/interface/goals/focus_GLF_code_talkers.dds"			
+	}
 }

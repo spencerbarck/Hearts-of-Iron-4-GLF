@@ -691,7 +691,7 @@
 	focus = {
 		id = GLF_this_land_is_our_land
 		icon = GFX_goal_GLF_this_land_is_our_land
-		x = 1
+		x = 2
 		y = 6
 		relative_position_id = GLF_international_war_parade
 
@@ -713,13 +713,13 @@
 	focus = {
 		id = GLF_the_great_north
 		icon = GFX_goal_GLF_the_great_north
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GLF_this_land_is_our_land
 
 		cost = 10
 		prerequisite = { focus = GLF_this_land_is_our_land }
-		mutually_exclusive = { focus = GLF_reject_the_old_world }
+		mutually_exclusive = { focus = GLF_return_to_isolation }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -733,11 +733,11 @@
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GLF_reject_the_old_world
-		icon = GFX_goal_GLF_reject_the_old_world
-		x = 1
+		id = GLF_return_to_isolation
+		icon = GFX_goal_GLF_return_to_isolation
+		x = 2
 		y = 1
 		relative_position_id = GLF_this_land_is_our_land
 
@@ -750,37 +750,39 @@
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_timed_idea = {
-				idea = GLF_reject_the_old_world_focus
-				days = 720
-			}
+			add_ideas = GLF_return_to_isolation_focus
+			add_ideas = closed_economy
 		}
 	}
 
 	focus = {
-		id = GLF_return_to_isolation
-		icon = GFX_goal_GLF_return_to_isolation
-		x = 0
+		id = GLF_reject_the_old_world
+		icon = GFX_goal_GLF_reject_the_old_world
+		x = -1
 		y = 1
-		relative_position_id = GLF_reject_the_old_world
+		relative_position_id = GLF_return_to_isolation
 
 		cost = 10
-		prerequisite = { focus = GLF_reject_the_old_world }
+		
+		prerequisite = { focus = GLF_return_to_isolation }
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_ideas = GLF_return_to_isolation_focus
-			add_ideas = closed_economy
+			add_timed_idea = {
+				idea = GLF_reject_the_old_world_focus
+				days = 720
+			}
 		}
 	}
 	
 	focus = {
 		id = GLF_seize_foreign_assets
 		icon = GFX_goal_GLF_seize_foreign_assets
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GLF_return_to_isolation
 
@@ -799,12 +801,13 @@
 	focus = {
 		id = GLF_our_strong_boarders
 		icon = GFX_goal_GLF_our_strong_boarders
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_seize_foreign_assets
 
 		cost = 10
 		prerequisite = { focus = GLF_seize_foreign_assets }
+		prerequisite = { focus = GLF_reject_the_old_world }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -818,7 +821,7 @@
 	focus = {
 		id = GLF_ideas_from_the_south
 		icon = GFX_goal_GLF_ideas_from_the_south
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_the_great_north
 
@@ -845,12 +848,12 @@
 	focus = {
 		id = GLF_appease_the_us
 		icon = GFX_goal_GLF_appease_the_us
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GLF_ideas_from_the_south
+		relative_position_id = GLF_the_great_north
 
 		cost = 7.5
-		prerequisite = { focus = GLF_ideas_from_the_south }
+		prerequisite = { focus = GLF_the_great_north }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -865,12 +868,13 @@
 	focus = {
 		id = GLF_new_world_ties
 		icon = GFX_goal_GLF_new_world_ties
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_appease_the_us
 
 		cost = 10
 		prerequisite = { focus = GLF_appease_the_us }
+		prerequisite = { focus = GLF_ideas_from_the_south }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1435,7 +1439,7 @@
 	focus = {
 		id = GLF_support_our_scholars
 		icon = GFX_goal_GLF_support_our_scholars
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_afferm_the_gentle_side
 
@@ -1452,14 +1456,33 @@
 	}
 	
 	focus = {
+		id = GLF_support_our_worshipers
+		icon = GFX_goal_GLF_support_our_worshipers
+		x = 1
+		y = 1
+		relative_position_id = GLF_afferm_the_gentle_side
+
+		cost = 10
+		prerequisite = { focus = GLF_afferm_the_gentle_side }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
 		id = GLF_the_new_world_institute
 		icon = GFX_goal_GLF_the_new_world_institute
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GLF_support_our_scholars
 
 		cost = 10
-		prerequisite = { focus = GLF_support_our_scholars }
+		prerequisite = { focus = GLF_support_our_scholars focus = GLF_support_our_worshipers }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1474,7 +1497,7 @@
 	focus = {
 		id = GLF_the_trial_of_nixkamich
 		icon = GFX_goal_GLF_the_trial_of_nixkamich
-		x = 2
+		x = 3
 		y = 2
 		relative_position_id = GLF_support_our_scholars
 
@@ -1543,6 +1566,9 @@
 				remove_idea = GLF_end_hawkism_focus
 				add_idea = GLF_end_hawkism2_focus
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GLF_sw
+			
 		}
 	}
 
@@ -1579,7 +1605,7 @@
 	focus = {
 		id = GLF_support_our_soldiers
 		icon = GFX_goal_GLF_support_our_soldiers
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_concessions_to_the_hawks
 
@@ -1594,16 +1620,35 @@
 			add_ideas = GLF_support_our_soldiers_focus
 		}
 	}
+	
+	focus = {
+		id = GLF_support_our_workers
+		icon = GFX_goal_GLF_support_our_workers
+		x = 1
+		y = 1
+		relative_position_id = GLF_concessions_to_the_hawks
+
+		cost = 10
+		prerequisite = { focus = GLF_concessions_to_the_hawks }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = GLF_support_our_workers_focus
+		}
+	}
 
 	focus = {
 		id = GLF_free_nixkamich_tree
 		icon = GFX_goal_GLF_free_nixkamich
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GLF_support_our_soldiers
 
 		cost = 5
-		prerequisite = { focus = GLF_support_our_soldiers}
+		prerequisite = { focus = GLF_support_our_soldiers  focus = GLF_support_our_workers }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1782,6 +1827,8 @@
 				ideology = fascism
 				popularity = 0.15
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GLF_fe
 		}
 	}
 
@@ -1789,7 +1836,7 @@
 		id = GLF_revisit_the_treaties
 		icon = GFX_goal_GLF_revisit_the_treaties
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GLF_end_the_gentle_side
 
 		cost = 15
@@ -1844,12 +1891,12 @@
 	focus = {
 		id = GLF_great_lakes_industrial_council
 		icon = GFX_goal_GLF_great_lakes_industrial_council
-		x = 8
-		y = 1
-		relative_position_id = GLF_rally_the_lake_chiefs
+		x = -2
+		y = 2
+		relative_position_id = GLF_end_the_gentle_side
 		
 		cost = 5
-		prerequisite = { focus = GLF_rally_the_lake_chiefs }
+		prerequisite = { focus = GLF_end_the_gentle_side focus = GLF_tribes_in_the_20th_century }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
@@ -1874,7 +1921,7 @@
 		id = GLF_industrial_lake_projects
 		icon = GFX_goal_GLF_industrial_lake_projects
 		x = 0
-		y = 7
+		y = 2
 		relative_position_id = GLF_great_lakes_industrial_council
 
 		cost = 5
@@ -1901,7 +1948,7 @@
 	focus = {
 		id = GLF_indstrialize_lake_ontario
 		icon = GFX_goal_GLF_indstrialize_lake_ontario
-		x = -4
+		x = 0
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
@@ -1956,7 +2003,7 @@
 	focus = {
 		id = GLF_indstrialize_lake_erie
 		icon = GFX_goal_GLF_indstrialize_lake_erie
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
@@ -2006,7 +2053,7 @@
 	focus = {
 		id = GLF_indstrialize_lake_huron
 		icon = GFX_goal_GLF_indstrialize_lake_huron
-		x = 0
+		x = 4
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
@@ -2053,7 +2100,7 @@
 	focus = {
 		id = GLF_indstrialize_lake_michigan
 		icon = GFX_goal_GLF_indstrialize_lake_michigan
-		x = 2
+		x = 6
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
@@ -2099,11 +2146,11 @@
 	focus = {
 		id = GLF_indstrialize_lake_superior
 		icon = GFX_goal_GLF_indstrialize_lake_superior
-		x = 4
+		x = 8
 		y = 1
 		relative_position_id = GLF_industrial_lake_projects
 
-		cost = 70
+		cost = 10
 		prerequisite = { focus = GLF_industrial_lake_projects }
 
 		cancel_if_invalid = yes
@@ -2312,7 +2359,7 @@
 	focus = {
 		id = GLF_warrior_spirit
 		icon = GFX_goal_GLF_warrior_spirit
-		x = 43
+		x = 41
 		y = 0
 
 		cost = 10
@@ -2323,6 +2370,29 @@
 
 		completion_reward = {
 			add_manpower = 150000
+		}
+	}
+	
+	focus = {
+		id = GLF_code_talkers
+		icon = GFX_goal_GLF_code_talkers
+		x = 0
+		y = 1
+		relative_position_id = GLF_warrior_spirit
+
+		cost = 3
+		prerequisite = { focus = GLF_warrior_spirit}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 2.0
+					uses = 2
+					category = encryption_tech
+			}
 		}
 	}
 
@@ -2892,6 +2962,8 @@
 
 		completion_reward = {
 			GLF={ country_event = { id = glf.98 }}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GLF_s3
 		}
 	}
 }

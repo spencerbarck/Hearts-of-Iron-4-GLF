@@ -169,4 +169,14 @@ spriteTypes = {
 		name = "GFX_report_event_britan_accepts_GLF"
 		texturefile = "gfx/event_pictures/report_event_britan_accepts_GLF.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_bowh_dead"
+		texturefile = "gfx/event_pictures/report_event_bowh_dead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_north_shore"
+		texturefile = "gfx/event_pictures/report_event_north_shore.dds"
+	}
 }
