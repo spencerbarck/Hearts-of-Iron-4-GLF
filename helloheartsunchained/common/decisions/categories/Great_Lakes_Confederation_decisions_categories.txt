@@ -6,7 +6,6 @@ GLF_repurpose_trade_ships_decisions = {		#ID of category
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
 		has_completed_focus = GLF_repurpose_trade_ships
 	}
 }
@@ -19,7 +18,6 @@ GLF_save_the_land_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
 		has_completed_focus = GLF_save_the_land
 	}
 	
@@ -44,7 +42,6 @@ GLF_new_world_communism_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
 		has_completed_focus = GLF_new_world_communism
 	}
 	
@@ -71,9 +68,9 @@ GLF_the_cold_peace_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
+		#always = yes
 		NOT { has_country_flag = GLF_cold_peace_done }
-		#has_completed_focus = GLF_the_cold_peace
+		has_completed_focus = GLF_the_cold_peace
 	}
 	
 	visible_when_empty = yes
@@ -86,7 +83,6 @@ GLF_spanish_civil_war_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
 		has_country_flag = GLF_observers_spain
 		SPR = {
 			has_civil_war = yes
@@ -101,7 +97,6 @@ GLF_italy_ethiopia_war_decisions = {
 	allowed = {original_tag = GLF}
 	
 	visible = {
-		always = yes
 		has_country_flag = GLF_observers_ethiopia
 		ITA = {
 			has_war_with = ETH

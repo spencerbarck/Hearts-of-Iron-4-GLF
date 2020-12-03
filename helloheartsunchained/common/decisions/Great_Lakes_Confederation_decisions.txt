@@ -5,7 +5,10 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {
-			has_tech = early_destroyer
+			OR = {
+				has_tech = early_destroyer
+				has_tech = early_ship_hull_light
+			}
 			has_equipment = {
 				convoy > 3
 			}
@@ -68,7 +71,10 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {
-			has_tech = early_light_cruiser
+			OR{
+				has_tech = early_light_cruiser
+				has_tech = early_ship_hull_cruiser
+			}
 			has_equipment = {
 				convoy > 1
 			}
@@ -115,7 +121,10 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
-			has_tech = early_heavy_cruiser
+			OR {
+				has_tech = early_heavy_cruiser
+				has_tech = early_ship_hull_heavy
+			}
 			has_equipment = {
 				convoy > 0
 			}
@@ -154,7 +163,10 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
-			has_tech = early_carrier
+			OR{
+				has_tech = early_carrier
+				has_tech = early_ship_hull_carrier
+			}
 			has_equipment = {
 				convoy > 0
 			}

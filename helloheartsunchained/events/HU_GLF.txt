@@ -1384,6 +1384,8 @@ country_event = {
 	title = glf.104.t
 	desc = glf.104.d
 	picture = GFX_report_event_north_shore
+
+	is_triggered_only = yes
 	
 	trigger = {
 		original_tag  = GLF
@@ -1402,6 +1404,8 @@ country_event = {
 	title = glf.105.t
 	desc = glf.105.d
 	picture = GFX_report_event_bowh_dead
+	
+	is_triggered_only = yes
 	
 	trigger = {
 		original_tag  = GLF

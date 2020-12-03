@@ -91,11 +91,6 @@
 			OR = {
 				has_full_control_of_state = 809
 				
-				AND = {
-					CAN = { is_subject = yes }
-					NOT = { CAN = { is_subject_of = GLF } }
-				}
-				
 				CAN = { exists = no }
 			}
 			
