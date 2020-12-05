@@ -1,5 +1,4 @@
 
-
 	common/ideas/zzz_generic.txt
 	common/bookmarks/the_gathering_storm.txt
 	common/countries/colors.txt
@@ -15,14 +14,9 @@
 	history/units/CAN_1936.txt
 	history/units/USA_1936.txt
 	
-	interface/goals.gfx
-	interface/goals_shine.gfx
-	
 	localization/countries_I_english.yml
+	localization/countries_cosmetic_I_english.yml
 	localization/state_names_I_english.yml
-	localization/supply_area_names_I_english.yml
-	localization/traits_I_english.yml
-	localization/localization/traits_I_english.yml.yml
 	
 	map/airports.txt
 	map/buildings.txt

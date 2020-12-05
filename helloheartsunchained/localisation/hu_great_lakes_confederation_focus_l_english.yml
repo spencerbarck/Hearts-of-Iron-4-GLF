@@ -105,8 +105,8 @@
   GLF_new_world_communism_desc:0 "Our neighbors to the south have not yet accepted the ideas of community and true unity. We are in a good position to spread these ideas."
   GLF_new_world_communism_tooltip:0 "Unlocks Spread Communism to the United States Decisions"
   
-  GLF_the_detroit_revolution:0 "The Detroit Revolution"
-  GLF_the_detroit_revolution_desc:0 "The workers of the Confederation deserve the world. When the tribes industrialized the Great Lakes in the late 19th century workers were robbed as dangerous factories with horrible working conditions were built. It is time that we make a change. Some of the tribes will not side with us but our supporters are strong and the future is ours!"
+  GLF_the_great_lakes_revolution:0 "The Great Lakes Revolution"
+  GLF_the_great_lakes_revolution_desc:0 "The workers of the Confederation deserve the world. When the tribes industrialized the Great Lakes in the late 19th century workers were robbed as dangerous factories with horrible working conditions were built. It is time that we make a change. Some of the tribes will not side with us but our supporters are strong and the future is ours!"
   
   GLF_seduce_the_red_wolf:0 "Seduce the Red Wolf"
   GLF_seduce_the_red_wolf_desc:0 "Admiral Ivan Dmitrievich Papanin is an explorer and radical Bolshevik. During the civil war he ordered the execution of thousands of soldiers. He has shown great interest in the Confederation. His organizational skills are great and with enough coursing we can get him to join our armed forces."
@@ -219,6 +219,29 @@
   
   GLF_support_our_worshipers:0 "Support our Worshipers"
   GLF_support_our_worshipers_desc:0 "The gentle side is not just forgin policy, it states that every tribe within the Confederation has freedom to practice what they want. By supporting more places of worship throughout the Confederation we can further unite our people."
+
+  GLF_the_detroit_soviet:0 "The Detroit Soviet"
+  GLF_the_detroit_soviet_desc:0 "The city of Detroit has become one of the strongest industrial zones in the Confederation but it’s workers have seen none of the profits. It is time for an organization to look out for the workers, we should look to the Russians as an example and start a Detroit Soviet."
+  
+  GLF_the_chicago_soviet:0 "The Chicago Soviet"
+  GLF_the_chicago_soviet_desc:0 "The city of Chicago is a massive city with a thriving port, the workers of the port work long hours and have dangerous working conditions. It is time for an organization to look out for the workers, we should look to the Russians as an example and start a Chicago Soviet."
+  
+  GLF_new_peoples_army:0 "New People's Army"
+  GLF_new_peoples_army_desc:0 "The Great Lakes revolution has filled the hearts of the working class with national pride. These new worker warriors wish to defend their new country from those who wish to take advantage of the worker. The new people's army is formed from passionate worker volunteers who may be inexperienced but with proper training they can become a force to be reckoned with."
+  
+  GLF_call_for_soviet_generals:0 "Call for Soviet Generals"
+  GLF_call_for_soviet_generals_desc:0 "Now that the confederation has a strong relationship with the Soviet Union we can ask for their help. Two generals from the Russian far east front have been chosen to help our armies become more modern and organized."
+  
+  GLF_speak_with_the_silver_legion:0 "Speak with the Silver Legion"
+  GLF_speak_with_the_silver_legion_desc:0 "There are those who share our ideas in the United States, the Silver Legion of America does not have much power but if we work together we can further spread the ideas of nationalism. We should arrange radio broadcasts where the Legion can speak about the importance of patriotism."
+  
+  GLF_german_sub_cooperation:0 "German Sub Cooperation"
+  GLF_german_sub_cooperation_desc:0 "Now that we are in the Axis we can collaborate and share our technologies. The German U-Boats are renowned for their ability to hunt convoys undetected. We can share our designs and create stronger submarine designs."
+  
+  GLF_german_tank_cooperation:0 "German Tank Cooperation"
+  GLF_german_tank_cooperation_desc:0 "Now that we are in the Axis we can collaborate and share our technologies. German tanks are famous for their speed and strength, the Confederation and Germany can cooperate and create stronger faster tanks."
+  
+  
 
 #End internal politics section
 

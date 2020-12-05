@@ -893,7 +893,7 @@
 	focus = {
 		id = GLF_furs_for_europe
 		icon = GFX_goal_GLF_furs_for_europe
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = GLF_isolation_no_longer
 
@@ -919,6 +919,10 @@
 
 		cost = 10
 		prerequisite = { focus = GLF_furs_for_europe}
+		
+		available = {
+			NOT={has_war_with = CAN}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -941,6 +945,10 @@
 		cost = 7.5
 		prerequisite = { focus = GLF_negotiate_with_canada}
 		mutually_exclusive = { focus = GLF_end_the_deal}
+		
+		available = {
+			NOT={has_war_with = CAN}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -963,6 +971,10 @@
 
 		cost = 7.5
 		prerequisite = { focus = GLF_modify_the_deal}
+		
+		available = {
+			NOT={has_war_with = CAN}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -986,6 +998,10 @@
 
 		cost = 10
 		prerequisite = { focus = GLF_negotiate_with_canada}
+		
+		available = {
+			NOT={has_war_with = CAN}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1009,6 +1025,10 @@
 
 		cost = 10
 		prerequisite = { focus = GLF_end_the_deal}
+		
+		available = {
+			NOT={has_war_with = CAN}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1036,7 +1056,7 @@
 	focus = {
 		id = GLF_strengthen_the_chief
 		icon = GFX_goal_GLF_strengthen_the_chief
-		x = 6
+		x = 7
 		y = 6
 		relative_position_id = GLF_furs_for_europe
 
@@ -1062,7 +1082,7 @@
 	focus = {
 		id = GLF_community_of_tribes
 		icon = GFX_goal_GLF_community_of_tribes
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GLF_strengthen_the_chief
 
@@ -1086,16 +1106,86 @@
 			#Increases Communist Support
 		}
 	}
-
+	
 	focus = {
-		id = GLF_the_detroit_revolution
-		icon = GFX_goal_GLF_the_detroit_revolution
-		x = 0
+		id = GLF_the_detroit_soviet
+		icon = GFX_goal_GLF_the_detroit_soviet
+		x = 1
 		y = 2
 		relative_position_id = GLF_community_of_tribes
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GLF_community_of_tribes }
+
+		mutually_exclusive = { focus = GLF_the_chicago_soviet }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			
+			393 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = GLF_the_chicago_soviet
+		icon = GFX_goal_GLF_the_chicago_soviet
+		x = -1
+		y = 2
+		relative_position_id = GLF_community_of_tribes
+
+		cost = 5
+		prerequisite = { focus = GLF_community_of_tribes }
+
+		mutually_exclusive = { focus = GLF_the_detroit_soviet }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			
+			395 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = GLF_the_great_lakes_revolution
+		icon = GFX_goal_GLF_the_great_lakes_revolution
+		x = 0
+		y = 4
+		relative_position_id = GLF_community_of_tribes
+
+		cost = 10
+		prerequisite = { focus = GLF_the_chicago_soviet focus = GLF_the_detroit_soviet}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1104,7 +1194,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = 0.2
+				popularity = 0.1
 			}
 			start_civil_war = {
 			 ruling_party = communism
@@ -1119,10 +1209,10 @@
 		icon = GFX_goal_GLF_soviet_invitation
 		x = 0
 		y = 1
-		relative_position_id = GLF_the_detroit_revolution
+		relative_position_id = GLF_the_great_lakes_revolution
 
 		cost = 10
-		prerequisite = { focus = GLF_the_detroit_revolution }
+		prerequisite = { focus = GLF_the_great_lakes_revolution }
 
 		available = {
 			communism > 0.25
@@ -1145,12 +1235,12 @@
 	focus = {
 		id = GLF_new_world_communism
 		icon = GFX_goal_GLF_new_world_communism
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = GLF_soviet_invitation
+		relative_position_id = GLF_the_great_lakes_revolution
 
 		cost = 10
-		prerequisite = { focus = GLF_soviet_invitation }
+		prerequisite = { focus = GLF_the_great_lakes_revolution }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1160,11 +1250,79 @@
 			custom_effect_tooltip = GLF_new_world_communism_tooltip
 		}
 	}
+	
+	focus = {
+		id = GLF_new_peoples_army
+		icon = GFX_goal_GLF_new_peoples_army
+		x = -2
+		y = 1
+		relative_position_id = GLF_the_great_lakes_revolution
+
+		cost = 10
+		prerequisite = { focus = GLF_the_great_lakes_revolution }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = GLF_new_peoples_army_tooltip
+			hidden_effect = {
+				load_oob = "GLF_communism"
+			}
+		}
+	}
+	
+	focus = {
+		id = GLF_call_for_soviet_generals
+		icon = GFX_goal_GLF_call_for_soviet_generals
+		x = 0
+		y = 1
+		relative_position_id = GLF_soviet_invitation
+
+		cost = 10
+		prerequisite = { focus = GLF_soviet_invitation }
+		
+		available = {
+			is_in_faction_with = SOV
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			create_corps_commander = {#male
+				name = "Iosif Apanasenko"
+				picture = "Portrait_GLF_iosif_apanasenko.dds"
+				traits = { harsh_leader cavalry_officer winter_specialist}
+				skill = 4
+
+				attack_skill = 3
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {#male
+				name = "Maksim Purkayev"
+				picture = "Portrait_GLF_maksim_purkayev.dds"
+				traits = { brilliant_strategist harsh_leader old_guard  infantry_officer}
+				skill = 5
+
+				attack_skill = 3 
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 4
+			}
+			
+		}
+	}
 
 	focus = {
 		id = GLF_seduce_the_red_wolf
 		icon = GFX_goal_GLF_seduce_the_red_wolf
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GLF_community_of_tribes
 
@@ -1205,16 +1363,53 @@
 			#Increases Fascist Support
 		}
 	}
+	
+	focus = {
+		id = GLF_speak_with_the_silver_legion
+		icon = GFX_goal_GLF_speak_with_the_silver_legion
+		x = 0
+		y = 1
+		relative_position_id = GLF_settle_the_score
+
+		cost = 5
+		prerequisite = { focus = GLF_settle_the_score }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			
+			USA = {
+				add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GLF_german_invitation
 		icon = GFX_goal_GLF_german_invitation
 		x = 0
 		y = 1
-		relative_position_id = GLF_settle_the_score
+		relative_position_id = GLF_speak_with_the_silver_legion
 
 		cost = 10
-		prerequisite = { focus = GLF_settle_the_score }
+		prerequisite = { focus = GLF_speak_with_the_silver_legion }
 		
 		available = {
 			fascism > 0.25
@@ -1228,11 +1423,11 @@
 			GER = { country_event = { id = hu_germany.1 days = 1} }
 		}
 	}
-
+	
 	focus = {
-		id = GLF_tirpitz_plan_promise
-		icon = GFX_goal_GLF_tirpitz_plan_promise
-		x = 0
+		id = GLF_german_sub_cooperation
+		icon = GFX_goal_GLF_german_sub_cooperation
+		x = -1
 		y = 1
 		relative_position_id = GLF_german_invitation
 
@@ -1248,7 +1443,75 @@
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = ss_tech
+			}
+			GER = {
+				add_tech_bonus = {
+					ahead_reduction = 1
+					uses = 1
+					category = ss_tech
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GLF_tirpitz_plan_promise
+		icon = GFX_goal_GLF_tirpitz_plan_promise
+		x = 0
+		y = 2
+		relative_position_id = GLF_german_invitation
+
+		cost = 10
+		prerequisite = { focus = GLF_german_invitation }
+
+		available = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
 			GER = { country_event = { id = hu_germany.2 } }
+		}
+	}
+	
+	focus = {
+		id = GLF_german_tank_cooperation
+		icon = GFX_goal_GLF_german_tank_cooperation
+		x = 1
+		y = 1
+		relative_position_id = GLF_german_invitation
+
+		cost = 10
+		prerequisite = { focus = GLF_german_invitation }
+
+		available = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = cat_light_armor
+			}
+			GER = {
+				add_tech_bonus = {
+					ahead_reduction = 1
+					uses = 1
+					category = cat_light_armor
+				}
+			}
 		}
 	}
 

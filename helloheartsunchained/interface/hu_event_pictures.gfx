@@ -179,4 +179,15 @@ spriteTypes = {
 		name = "GFX_report_event_north_shore"
 		texturefile = "gfx/event_pictures/report_event_north_shore.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_bugonaygeshig_dies"
+		texturefile = "gfx/event_pictures/report_event_bugonaygeshig_dies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_niagara_falls_bridge_collapse"
+		texturefile = "gfx/event_pictures/report_event_niagara_falls_bridge_collapse.dds"
+	}
+	
 }

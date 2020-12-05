@@ -944,6 +944,22 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.4
 			}
 		}
+		
+		GLF_builders_blamed = {
+		
+			allowed = {
+				original_tag = GLF
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				production_speed_buildings_factor = -0.05
+			}
+		}
 	}
 
 	political_advisor = {
