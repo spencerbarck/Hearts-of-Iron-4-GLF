@@ -2113,6 +2113,7 @@
 			add_state_core = 360
 			add_state_core = 362
 			add_state_core = 369
+			add_state_core = 807
 			
 			#add_state_claim = 357
 			#add_state_claim = 360
