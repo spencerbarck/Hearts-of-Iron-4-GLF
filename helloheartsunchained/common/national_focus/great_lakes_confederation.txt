@@ -2109,7 +2109,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_state_core = 357
+			add_state_core = 373
 			add_state_core = 360
 			add_state_core = 362
 			add_state_core = 369
