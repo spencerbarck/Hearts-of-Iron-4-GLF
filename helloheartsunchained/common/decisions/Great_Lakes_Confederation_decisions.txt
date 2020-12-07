@@ -5,10 +5,14 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {
-			OR = {
-				has_tech = early_destroyer
+			if = {
+			limit = { has_dlc = "Man the Guns" }
 				has_tech = early_ship_hull_light
+				has_tech = basic_battery
+			} else {
+				has_tech = early_destroyer
 			}
+			
 			has_equipment = {
 				convoy > 3
 			}
@@ -26,37 +30,83 @@ GLF_repurpose_trade_ships_decisions = {
 		complete_effect = {
 			custom_effect_tooltip = repurpose_small_trade_ships_tooltip
 			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = destroyer_1
+				if = {
+				limit = { has_dlc = "Man the Guns" }
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_light_1
+							version_name = "Small Trade Class"
+						}
+						name = "Small Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = destroyer_1
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_light_1
+							version_name = "Small Trade Class"
+						}
+						name = "Small Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = destroyer_1
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_light_1
+							version_name = "Small Trade Class"
+						}
+						name = "Small Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = destroyer_1
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_light_1
+							version_name = "Small Trade Class"
+						}
+						name = "Small Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+				
+				} else = {
+				
+					add_equipment_production = {
+						equipment = {
+							type = destroyer_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = destroyer_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = destroyer_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = destroyer_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
 				}
 			}
 		}
@@ -71,9 +121,12 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {
-			OR{
-				has_tech = early_light_cruiser
+			if = {
+			limit = { has_dlc = "Man the Guns" }
 				has_tech = early_ship_hull_cruiser
+				has_tech = basic_battery
+			} else = {
+				has_tech = early_light_cruiser
 			}
 			has_equipment = {
 				convoy > 1
@@ -92,21 +145,46 @@ GLF_repurpose_trade_ships_decisions = {
 		
 			custom_effect_tooltip = repurpose_medium_trade_ships_tooltip
 			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = light_cruiser_1
+				if = {
+				limit = { has_dlc = "Man the Guns" }
+				
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_cruiser_1
+							version_name = "Medium Trade Class"
+						}
+						name = "Medium Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = light_cruiser_1
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_cruiser_1
+							version_name = "Medium Trade Class"
+						}
+						name = "Medium Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+				} else = {
+					add_equipment_production = {
+						equipment = {
+							type = light_cruiser_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_cruiser_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
 				}
 			}
 		}
@@ -121,10 +199,14 @@ GLF_repurpose_trade_ships_decisions = {
 		icon = generic_naval
 		
 		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
-			OR {
-				has_tech = early_heavy_cruiser
+			if = {
+			limit = { has_dlc = "Man the Guns" }
 				has_tech = early_ship_hull_heavy
+				has_tech = basic_battery
+			}else = {
+				has_tech = early_heavy_cruiser
 			}
+			
 			has_equipment = {
 				convoy > 0
 			}
@@ -142,13 +224,28 @@ GLF_repurpose_trade_ships_decisions = {
 			
 			custom_effect_tooltip = repurpose_large_trade_ship_tooltip
 			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = heavy_cruiser_1
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_cruiser_1
+							version_name = "Large Trade Class"
+						}
+						name = "Large Converted Trade Ship" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+					} else = {
+					add_equipment_production = {
+						equipment = {
+							type = heavy_cruiser_1
+						}
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
 				}
 			}
 		}
@@ -162,10 +259,13 @@ GLF_repurpose_trade_ships_decisions = {
 
 		icon = generic_naval
 		
-		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
-			OR{
-				has_tech = early_carrier
+		available = {
+			if = {
+			limit = { has_dlc = "Man the Guns" }
+			
 				has_tech = early_ship_hull_carrier
+			}else = {
+				has_tech = early_carrier
 			}
 			has_equipment = {
 				convoy > 0
@@ -183,6 +283,21 @@ GLF_repurpose_trade_ships_decisions = {
 			
 			custom_effect_tooltip = repurpose_the_hemlock_tooltip
 			hidden_effect = {
+				if = {
+				limit = { has_dlc = "Man the Guns" }
+				
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_conversion_bb
+							version_name = "Hemlock Class"
+						}
+						name = "GLC Hemlock" 
+						requested_factories = 1
+						progress = 0.95
+						amount = 1
+					}
+					
+				} else = {
 				add_equipment_production = {
 					equipment = {
 						type = carrier_1
@@ -190,6 +305,7 @@ GLF_repurpose_trade_ships_decisions = {
 					requested_factories = 1
 					progress = 0.90
 					amount = 1
+				}
 				}
 			}
 		}

@@ -61,6 +61,12 @@
 				uses = 1
 				category = bb_tech
 			}
+			
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				
+				set_technology = { basic_battery = 1 } 
+			}
 		}
 	}
 
@@ -168,7 +174,7 @@
 		y = 4
 		relative_position_id = GLF_our_path_to_the_sea
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_our_path_to_the_sea }
 
 		cancel_if_invalid = yes
@@ -282,6 +288,78 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				create_equipment_variant = {
+					name = "Small Trade Class"					
+					type = ship_hull_light_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = ship_torpedo_1
+						mid_1_custom_slot = empty
+						rear_1_custom_slot = empty
+					}
+					obsolete = no
+				}
+				create_equipment_variant = {
+					name = "Medium Trade Class"
+					type = ship_hull_cruiser_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = empty
+						rear_1_custom_slot = ship_light_medium_battery_1
+					}
+					obsolete = no
+				}
+				create_equipment_variant = {
+					name = "Large Trade Class"
+					type = ship_hull_cruiser_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+						mid_1_custom_slot = ship_medium_battery_1
+						mid_2_custom_slot = empty
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+				create_equipment_variant = {
+					name = "Hemlock Class"
+					type = ship_hull_carrier_conversion_bb
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						mid_1_custom_slot = empty
+					}
+					obsolete = no
+				}
+			}
+			}
+			
 			custom_effect_tooltip = GLF_repurpose_trade_ships_tooltip
 		}
 
@@ -1211,7 +1289,7 @@
 		y = 1
 		relative_position_id = GLF_the_great_lakes_revolution
 
-		cost = 10
+		cost = 7.5
 		prerequisite = { focus = GLF_the_great_lakes_revolution }
 
 		available = {
@@ -1258,7 +1336,7 @@
 		y = 1
 		relative_position_id = GLF_the_great_lakes_revolution
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GLF_the_great_lakes_revolution }
 
 		cancel_if_invalid = yes
@@ -1280,7 +1358,7 @@
 		y = 1
 		relative_position_id = GLF_soviet_invitation
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GLF_soviet_invitation }
 		
 		available = {
@@ -2115,10 +2193,6 @@
 			add_state_core = 369
 			add_state_core = 807
 			
-			#add_state_claim = 357
-			#add_state_claim = 360
-			#add_state_claim = 362
-			#add_state_claim = 369
 			add_named_threat = { threat = 4 name = GLF_revisit_the_treaties }
 		}
 	}
@@ -2632,7 +2706,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_manpower = 150000
+			add_manpower = 100000
 		}
 	}
 	
