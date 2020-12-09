@@ -1505,6 +1505,13 @@ country_event = {
 	option = {
 		name = glf.108.a
 		add_political_power = -50
+		
+		276 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
 	}
 	#blame inspectors
 	option = {
@@ -1512,6 +1519,78 @@ country_event = {
 		add_timed_idea = {
 				idea = GLF_builders_blamed
 				days = 120
+		}
+		
+		276 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+
+#New England Hurricane
+country_event = {
+	id = glf.109
+	title = glf.109.t
+	desc = glf.109.d
+	picture = GFX_report_event_new_england_hurricane
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag  = GLF
+		date > 1938.9.21
+	}
+
+	fire_only_once = yes
+	
+	#coordiante relief efforts
+	option = {
+		name = glf.109.a
+		
+		trigger = {
+			NOT = {GLF={controls_state = 357 }}
+		}
+		
+		add_political_power = -10
+		
+		add_opinion_modifier = { target = USA modifier = GLF_hurricane }
+		USA = { add_opinion_modifier = { target = ROOT modifier = GLF_hurricane } }
+		
+		808 = {
+			damage_building = {
+				type = infrastructure
+				damage = 4
+			}
+		}
+		
+		357 = {
+			damage_building = {
+				type = infrastructure
+				damage = 4
+			}
+		}
+	}
+	
+	#help lakers most of all
+	option = {
+		name = glf.109.b
+		add_stability = 0.05
+		
+		808 = {
+			damage_building = {
+				type = infrastructure
+				damage = 5
+			}
+		}
+		
+		357 = {
+			damage_building = {
+				type = infrastructure
+				damage = 5
+			}
 		}
 	}
 }

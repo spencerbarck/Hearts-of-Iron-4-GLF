@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Lake Warriors"		
 
-	division_names_group = CAN_GAR_01
+	division_names_group = GLF_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -13,7 +13,7 @@
 division_template = {
 	name = "Lake Hoard"
 
-	division_names_group = CAN_GAR_01
+	division_names_group = GLF_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,14 +21,13 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
 	}
 }
 
 division_template = {
 	name = "Detroit Motorized"
 
-	division_names_group = CAN_GAR_01
+	division_names_group = GLF_INF_01
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -41,7 +40,7 @@ division_template = {
 units = {
 	
 	division= {	
-		name = "Lake Warriors"
+		name = "Oshkinawe-ogichidaag"
 		location = 9450 
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -49,7 +48,7 @@ units = {
 
 	}
 	division= {	
-		name = "2 Lake Warriors"
+		name = "Anyǫnyętaˀ"
 		location = 9450
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -57,7 +56,7 @@ units = {
 
 	}
 	division= {	
-		name = "3 Lake Warriors"
+		name = "Anyǫnyętaˀ"
 		location = 1595
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -65,7 +64,7 @@ units = {
 
 	}
 	division= {	
-		name = "4 Lake Warriors"
+		name = "Anyǫnyętaˀ"
 		location = 1866
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -73,7 +72,7 @@ units = {
 
 	}
 	division= {	
-		name = "5 Lake Warriors"
+		name = "Lake Hoard"
 		location = 6710
 		division_template = "Lake Hoard"
 		start_experience_factor = 0.2
@@ -81,7 +80,7 @@ units = {
 
 	}
 	division= {	
-		name = "6 Lake Warriors"
+		name = "Kiilhswa Alenia"
 		location = 6710
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -89,7 +88,7 @@ units = {
 
 	}
 	division= {	
-		name = "7 Lake Warriors"
+		name = "Wɒrɪə"
 		location = 6710
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -97,7 +96,7 @@ units = {
 
 	}
 	division= {	
-		name = "8 Lake Warriors"
+		name = "Lake Hoard"
 		location = 11654
 		division_template = "Lake Hoard"
 		start_experience_factor = 0.2
@@ -105,7 +104,7 @@ units = {
 
 	}
 	division= {	
-		name = "9 Lake Warriors"
+		name = "Oshkinawe-ogichidaag"
 		location = 11654
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -113,7 +112,7 @@ units = {
 
 	}
 	division= {	
-		name = "10 Lake Warriors"
+		name = "Wɒrɪə"
 		location = 3778
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -121,7 +120,7 @@ units = {
 
 	}
 	division= {	
-		name = "11 Lake Warriors"
+		name = "Oshkinawe-ogichidaag"
 		location = 3778
 		division_template = "Lake Warriors"
 		start_experience_factor = 0.2
@@ -129,8 +128,6 @@ units = {
 
 	}
 }
-
-### No notable air forces ###
 
 instant_effect = {
 	add_equipment_production = {

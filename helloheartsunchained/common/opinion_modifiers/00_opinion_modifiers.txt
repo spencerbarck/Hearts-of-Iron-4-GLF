@@ -1135,4 +1135,8 @@ opinion_modifiers = {
 	GLF_contact_spain = {
 		value = 50
 	}
+	
+	GLF_hurricane = {
+		value = 25
+	}
 }

@@ -190,4 +190,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_niagara_falls_bridge_collapse.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_new_england_hurricane"
+		texturefile = "gfx/event_pictures/report_event_new_england_hurricane.dds"
+	}
+	
 }
